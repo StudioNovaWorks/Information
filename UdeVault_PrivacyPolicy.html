@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy — UdeVault</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --code-bg: #f1f5f9;
+      --note-bg: #f8fafc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #818cf8;
+        --accent-hover: #a5b4fc;
+        --code-bg: #0f172a;
+        --note-bg: #172033;
+      }
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans Arabic", "Noto Sans Thai", "Noto Sans Devanagari", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.25rem 2.5rem;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.5rem 2.5rem;
+      }
+      .container {
+        padding: 1.5rem 1.25rem;
+        border-radius: 10px;
+      }
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+
+    .lang-control {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .lang-control label {
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .lang-control select {
+      font: inherit;
+      font-size: 0.875rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .lang-control select:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 1.85rem;
+      line-height: 1.3;
+    }
+
+    .meta {
+      margin: 0 0 1.5rem;
+      font-size: 0.925rem;
+      color: var(--muted);
+    }
+
+    .meta div + div {
+      margin-top: 0.2rem;
+    }
+
+    .intro {
+      margin: 0 0 2rem;
+    }
+
+    section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.22rem;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 0 0 0.85rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0.5rem 0 0.9rem;
+      padding-inline-start: 1.4rem;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      background-color: var(--code-bg);
+      padding: 0.12em 0.4em;
+      border-radius: 5px;
+      border: 1px solid var(--border);
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      word-break: break-word;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    .note {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background-color: var(--note-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">UdeVault · Studio Nova Works</div>
+      <div class="lang-control">
+        <label for="langSelect" id="langLabel">Language</label>
+        <select id="langSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="ar">العربية</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="hi">हिन्दी</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="it">Italiano</option>
+          <option value="ko">한국어</option>
+          <option value="pt">Português</option>
+          <option value="ru">Русский</option>
+          <option value="th">ไทย</option>
+          <option value="tr">Türkçe</option>
+          <option value="uk">Українська</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="zh_CN">简体中文</option>
+          <option value="zh_TW">繁體中文</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Static English fallback ensures non-JS crawlers and automated policy checks always read the complete policy -->
+    <main id="policyContent">
+      <h1>Privacy Policy — UdeVault</h1>
+      <div class="meta">
+        <div><strong>Last Updated:</strong> November 18, 2026</div>
+        <div><strong>Developer:</strong> Studio Nova Works</div>
+      </div>
+      <p class="intro">
+        Studio Nova Works ("we", "our", or "us") respects your privacy and is committed to protecting your data when using the Google Chrome extension "UdeVault - Full Course Transcript &amp; Resource Archiver for Udemy" (the "Extension"). This Privacy Policy explains how the Extension handles information.
+      </p>
+
+      <section>
+        <h2>1. No Collection of Personal Data</h2>
+        <p>The Extension does not collect, store, or transmit any personally identifiable information (such as your name, email address, account credentials, or payment details), browsing history, or learning progress.</p>
+        <p>The Extension does not require user registration or account login.</p>
+      </section>
+
+      <section>
+        <h2>2. Settings Stored Locally on Your Device</h2>
+        <p>To remember your preferences across sessions, the Extension stores only the following user settings locally in your browser using <code>chrome.storage.local</code> and the extension's <code>localStorage</code>:</p>
+        <ul>
+          <li>UI display language preference (<code>uiLang</code> / <code>lang</code>)</li>
+          <li>Theme preference (Light / Dark mode)</li>
+          <li>Preferred transcript language</li>
+          <li>Export option toggles (official audio priority, inclusion of empty lectures, inclusion of resource links, and ZIP bundling of attachments)</li>
+        </ul>
+        <p>These settings remain strictly on your local device. They are never synced via <code>chrome.storage.sync</code> or transmitted to our servers or any third party.</p>
+      </section>
+
+      <section>
+        <h2>3. Course Data Processing and Network Requests</h2>
+        <p>When you use the Extension on an enrolled Udemy or Udemy Business course page, it performs the following actions:</p>
+        <ul>
+          <li>Reads lecture metadata, article text, caption tracks (WebVTT), and supplementary resource metadata</li>
+          <li>Formats the content into a Markdown file (<code>.md</code>) or packages it into a ZIP archive (<code>.zip</code>)</li>
+        </ul>
+        <p>All parsing, formatting, and ZIP packaging take place entirely locally inside your browser (on-device), and the resulting files are saved directly to your local downloads. No transcripts or course content are ever sent to Studio Nova Works or any external third-party server.</p>
+        <p>Solely for the purpose of retrieving subtitle tracks and supplementary attachments requested by you, your browser sends direct HTTPS requests to Udemy and its official content delivery domains (<code>*.udemy.com</code>, <code>*.udemycdn.com</code>, <code>*.amazonaws.com</code>, and <code>*.cloudfront.net</code>).</p>
+      </section>
+
+      <section>
+        <h2>4. Chrome Extension Permissions</h2>
+        <p>The Extension requests only the minimum permissions necessary to operate:</p>
+        <ul>
+          <li><code>sidePanel</code>: Displays the Extension's workspace alongside the Udemy course player.</li>
+          <li><code>storage</code>: Saves the local user preferences described in Section 2 on your device.</li>
+          <li><code>tabs</code>: Checks the active tab's URL to verify whether it is a valid Udemy or Udemy Business course page (<code>https://*.udemy.com/course/*</code>) and updates the side panel state accordingly. Browsing history on other websites is never read or stored.</li>
+          <li><code>scripting</code>: Applies the Extension's content script to already-open Udemy course tabs immediately after installation or update so you can use it without reloading the page.</li>
+          <li><strong>Host Permissions</strong> (<code>*.udemy.com</code>, <code>*.udemycdn.com</code>, <code>*.amazonaws.com</code>, <code>*.cloudfront.net</code>): Required to read course curriculum data and download signed WebVTT caption tracks and lecture attachments directly to your device.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Third-Party Services, Analytics, and Advertising</h2>
+        <ul>
+          <li>The Extension does not use any analytics tools (such as Google Analytics), tracking SDKs, or advertising networks.</li>
+          <li>The Extension does not load or execute remotely hosted code.</li>
+          <li>We never sell, rent, share, or disclose user data to third parties.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Data Retention and Deletion</h2>
+        <p>All locally stored preferences are permanently deleted when you uninstall the Extension from Chrome or clear your browser's extension storage/site data. Because no data is stored on any external server, no separate data deletion request is needed.</p>
+      </section>
+
+      <section>
+        <h2>7. Compliance with Chrome Web Store Policies</h2>
+        <p>The Extension's use of browser APIs and information adheres to the Chrome Web Store Developer Program Policies, including the Limited Use requirements. Information accessed by the Extension is used exclusively to provide its core functionality and is never used for creditworthiness, advertising, or data brokering.</p>
+      </section>
+
+      <section>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in the Extension's features, applicable laws, or Chrome Web Store requirements. Any updates will be indicated by updating the "Last Updated" date at the top of this page.</p>
+      </section>
+
+      <section>
+        <h2>9. Developer Information &amp; Related Links</h2>
+        <p>For general information and updates about this Extension, please visit:</p>
+        <ul>
+          <li><strong>Developer:</strong> Studio Nova Works</li>
+          <li><strong>Information Page:</strong> <a href="https://ko-fi.com/studionovaworks" target="_blank" rel="noopener noreferrer">https://ko-fi.com/studionovaworks</a></li>
+        </ul>
+        <p class="note">Note: This Extension is a free, independently developed personal tool provided "as is." Dedicated technical support or individual inquiries are generally not provided.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const INFO_URL = "https://ko-fi.com/studionovaworks";
+
+    const POLICIES = {
+      en: {
+        dir: "ltr",
+        langLabel: "Language",
+        docTitle: "Privacy Policy — UdeVault",
+        h1: "Privacy Policy — UdeVault",
+        lastUpdatedLabel: "Last Updated:",
+        lastUpdatedValue: "November 18, 2026",
+        developerLabel: "Developer:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("we", "our", or "us") respects your privacy and is committed to protecting your data when using the Google Chrome extension "UdeVault - Full Course Transcript & Resource Archiver for Udemy" (the "Extension"). This Privacy Policy explains how the Extension handles information.',
+        s1: {
+          title: "1. No Collection of Personal Data",
+          p1: "The Extension does not collect, store, or transmit any personally identifiable information (such as your name, email address, account credentials, or payment details), browsing history, or learning progress.",
+          p2: "The Extension does not require user registration or account login."
+        },
+        s2: {
+          title: "2. Settings Stored Locally on Your Device",
+          p1: "To remember your preferences across sessions, the Extension stores only the following user settings locally in your browser using `chrome.storage.local` and the extension's `localStorage`:",
+          items: [
+            "UI display language preference (`uiLang` / `lang`)",
+            "Theme preference (Light / Dark mode)",
+            "Preferred transcript language",
+            "Export option toggles (official audio priority, inclusion of empty lectures, inclusion of resource links, and ZIP bundling of attachments)"
+          ],
+          p2: "These settings remain strictly on your local device. They are never synced via `chrome.storage.sync` or transmitted to our servers or any third party."
+        },
+        s3: {
+          title: "3. Course Data Processing and Network Requests",
+          p1: "When you use the Extension on an enrolled Udemy or Udemy Business course page, it performs the following actions:",
+          items: [
+            "Reads lecture metadata, article text, caption tracks (WebVTT), and supplementary resource metadata",
+            "Formats the content into a Markdown file (`.md`) or packages it into a ZIP archive (`.zip`)"
+          ],
+          p2: "All parsing, formatting, and ZIP packaging take place entirely locally inside your browser (on-device), and the resulting files are saved directly to your local downloads. No transcripts or course content are ever sent to Studio Nova Works or any external third-party server.",
+          p3: "Solely for the purpose of retrieving subtitle tracks and supplementary attachments requested by you, your browser sends direct HTTPS requests to Udemy and its official content delivery domains (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com`, and `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Chrome Extension Permissions",
+          p1: "The Extension requests only the minimum permissions necessary to operate:",
+          items: [
+            { code: "sidePanel", desc: "Displays the Extension's workspace alongside the Udemy course player." },
+            { code: "storage", desc: "Saves the local user preferences described in Section 2 on your device." },
+            { code: "tabs", desc: "Checks the active tab's URL to verify whether it is a valid Udemy or Udemy Business course page (`https://*.udemy.com/course/*`) and updates the side panel state accordingly. Browsing history on other websites is never read or stored." },
+            { code: "scripting", desc: "Applies the Extension's content script to already-open Udemy course tabs immediately after installation or update so you can use it without reloading the page." },
+            { label: "Host Permissions", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Required to read course curriculum data and download signed WebVTT caption tracks and lecture attachments directly to your device." }
+          ]
+        },
+        s5: {
+          title: "5. Third-Party Services, Analytics, and Advertising",
+          items: [
+            "The Extension does not use any analytics tools (such as Google Analytics), tracking SDKs, or advertising networks.",
+            "The Extension does not load or execute remotely hosted code.",
+            "We never sell, rent, share, or disclose user data to third parties."
+          ]
+        },
+        s6: {
+          title: "6. Data Retention and Deletion",
+          p1: "All locally stored preferences are permanently deleted when you uninstall the Extension from Chrome or clear your browser's extension storage/site data. Because no data is stored on any external server, no separate data deletion request is needed."
+        },
+        s7: {
+          title: "7. Compliance with Chrome Web Store Policies",
+          p1: "The Extension's use of browser APIs and information adheres to the Chrome Web Store Developer Program Policies, including the Limited Use requirements. Information accessed by the Extension is used exclusively to provide its core functionality and is never used for creditworthiness, advertising, or data brokering."
+        },
+        s8: {
+          title: "8. Changes to This Privacy Policy",
+          p1: 'We may update this Privacy Policy from time to time to reflect changes in the Extension\'s features, applicable laws, or Chrome Web Store requirements. Any updates will be indicated by updating the "Last Updated" date at the top of this page.'
+        },
+        s9: {
+          title: "9. Developer Information & Related Links",
+          p1: "For general information and updates about this Extension, please visit:",
+          devLabel: "Developer:",
+          infoLabel: "Information Page:",
+          note: 'Note: This Extension is a free, independently developed personal tool provided "as is." Dedicated technical support or individual inquiries are generally not provided.'
+        }
+      },
+
+      ja: {
+        dir: "ltr",
+        langLabel: "言語",
+        docTitle: "プライバシーポリシー — UdeVault",
+        h1: "プライバシーポリシー — UdeVault",
+        lastUpdatedLabel: "最終更新日:",
+        lastUpdatedValue: "2026年11月18日",
+        developerLabel: "開発・運営:",
+        developerValue: "Studio Nova Works",
+        intro: "Studio Nova Works（以下「当方」といいます）は、Google Chrome 拡張機能「UdeVault - Full Course Transcript & Resource Archiver for Udemy」（以下「本拡張機能」といいます）におけるユーザーのプライバシーおよびデータの保護を重視しています。本プライバシーポリシーでは、本拡張機能が取り扱う情報およびその利用方法について説明します。",
+        s1: {
+          title: "1. 個人データの非収集について",
+          p1: "本拡張機能は、ユーザーの個人を特定できる情報（氏名、メールアドレス、アカウント認証情報、クレジットカード情報など）、閲覧履歴、または学習進捗などの個人データを一切収集・保存・外部送信しません。",
+          p2: "ユーザーアカウントの登録やログイン機能も提供していません。"
+        },
+        s2: {
+          title: "2. 端末内（ローカル）に保存される設定情報",
+          p1: "本拡張機能は、利便性向上のために以下のユーザー設定情報のみをブラウザのローカルストレージ（`chrome.storage.local` および拡張機能領域の `localStorage`）に保存します。",
+          items: [
+            "UIの表示言語設定（`uiLang` / `lang`）",
+            "テーマ設定（ライトモード／ダークモード）",
+            "優先する文字起こし（字幕）言語設定",
+            "エクスポート時の各種オプション設定（公式音声の優先設定、空レクチャーの含有設定、添付リソースリンクおよびZIP同梱設定）"
+          ],
+          p2: "これらの設定情報はユーザーの端末内にのみ保存され、`chrome.storage.sync` 等を通じたクラウド同期や、当方および第三者のサーバーへの送信は一切行われません。"
+        },
+        s3: {
+          title: "3. コースデータの処理および通信先について",
+          p1: "本拡張機能は、ユーザーが受講中の Udemy または Udemy Business のコースページにおいて、以下の処理を行います。",
+          items: [
+            "講義のメタデータ、記事本文、字幕データ（WebVTT）、および添付リソース情報の取得",
+            "Markdown ファイル（`.md`）または ZIP アーカイブ（`.zip`）への整形・パッケージング"
+          ],
+          p2: "これらの解析・整形・ZIP生成処理はすべてユーザーのブラウザ内（オンデバイス）で完結し、生成されたファイルはユーザーの端末に直接ダウンロードされます。処理された文字起こしデータやコース内容が当方や外部の第三者サーバーへ送信されることはありません。",
+          p3: "なお、字幕ファイルや添付リソースを取得する目的でのみ、ユーザーのブラウザから Udemy および Udemy が利用する公式配信ドメイン（`*.udemy.com`、`*.udemycdn.com`、`*.amazonaws.com`、`*.cloudfront.net`）に対して直接 HTTPS リクエストを行います。"
+        },
+        s4: {
+          title: "4. Chrome 拡張機能の権限（Permissions）の利用目的",
+          p1: "本拡張機能は、機能提供に必要な最小限の権限のみを要求し、以下の目的でのみ使用します。",
+          items: [
+            { code: "sidePanel", desc: "Udemy の講義再生画面の横に操作用サイドパネルを表示するため。" },
+            { code: "storage", desc: "上記「2.」に記載したユーザー設定をブラウザ内にローカル保存するため。" },
+            { code: "tabs", desc: "現在開いているタブの URL を確認し、有効な Udemy / Udemy Business のコースページ（`https://*.udemy.com/course/*`）であるかを判定・表示更新するため（その他のサイトの閲覧履歴は取得・保存しません）。" },
+            { code: "scripting", desc: "拡張機能のインストールまたは更新直後に、すでに開かれている Udemy コースタブへスクリプトを適用し、リロードなしで利用できるようにするため。" },
+            { label: "ホスト権限", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "コース構造の取得、および Udemy 公式 API が返す署名付き字幕ファイル・添付リソースをブラウザ内へダウンロードするため。" }
+          ]
+        },
+        s5: {
+          title: "5. 第三者への提供・アクセス解析・広告について",
+          items: [
+            "本拡張機能は、Google Analytics 等のアクセス解析ツール、トラッキング SDK、広告ネットワークを一切使用していません。",
+            "本拡張機能は、外部サーバーから動的にプログラムコードを読み込む（リモートコード実行）ことは一切ありません。",
+            "ユーザーのデータを第三者へ販売、貸与、共有、または開示することはありません。"
+          ]
+        },
+        s6: {
+          title: "6. データの保持期間と削除方法",
+          p1: "ローカルに保存された設定情報は、ユーザーが本拡張機能をブラウザからアンインストールするか、Chrome の拡張機能データ／閲覧データを消去することで完全に削除されます。当方のサーバー上にユーザーデータは存在しないため、削除依頼等の手続きは不要です。"
+        },
+        s7: {
+          title: "7. Google Chrome ウェブストアのポリシー遵守",
+          p1: "本拡張機能による Google API およびブラウザ情報へのアクセスは、Chrome Web Store Developer Program Policies（Limited Use 要件を含む）を遵守しています。取得した情報は本拡張機能の中核機能の提供にのみ使用され、それ以外の目的（信用調査、広告配信、第三者へのデータ販売など）には一切使用されません。"
+        },
+        s8: {
+          title: "8. プライバシーポリシーの変更",
+          p1: "当方は、本拡張機能の機能追加や法令・ストア規約の改定等に伴い、本プライバシーポリシーの内容を改定することがあります。重要な変更がある場合は、本ページ上の「最終更新日」を更新してお知らせします。"
+        },
+        s9: {
+          title: "9. 開発者情報・関連リンク",
+          p1: "本拡張機能に関する最新情報や公開元情報については、以下のページをご参照ください。",
+          devLabel: "運営者:",
+          infoLabel: "情報公開サイト:",
+          note: "※ 本拡張機能は無償で提供される個人開発ツールであり、個別の技術サポートやお問い合わせへの対応は原則として行っておりません。あらかじめご了承ください。"
+        }
+      },
+
+      ar: {
+        dir: "rtl",
+        langLabel: "اللغة",
+        docTitle: "سياسة الخصوصية — UdeVault",
+        h1: "سياسة الخصوصية — UdeVault",
+        lastUpdatedLabel: "آخر تحديث:",
+        lastUpdatedValue: "18 نوفمبر 2026",
+        developerLabel: "المطور:",
+        developerValue: "Studio Nova Works",
+        intro: 'تحترم Studio Nova Works ("نحن") خصوصيتك وتلتزم بحماية بياناتك عند استخدام إضافة Google Chrome المسماة "UdeVault - Full Course Transcript & Resource Archiver for Udemy" ("الإضافة"). توضح سياسة الخصوصية هذه كيفية تعامل الإضافة مع المعلومات.',
+        s1: {
+          title: "1. عدم جمع البيانات الشخصية",
+          p1: "لا تقوم الإضافة بجمع أو تخزين أو إرسال أي معلومات تعريف شخصية (مثل الاسم أو البريد الإلكتروني أو بيانات اعتماد الحساب أو تفاصيل الدفع) أو سجل التصفح أو تقدم التعلم.",
+          p2: "لا تتطلب الإضافة تسجيل مستخدم أو تسجيل الدخول إلى حساب."
+        },
+        s2: {
+          title: "2. الإعدادات المخزنة محليًا على جهازك",
+          p1: "لتذكر تفضيلاتك عبر الجلسات، تخزن الإضافة إعدادات المستخدم التالية فقط محليًا في متصفحك باستخدام `chrome.storage.local` و`localStorage` الخاص بالإضافة:",
+          items: [
+            "تفضيل لغة عرض الواجهة (`uiLang` / `lang`)",
+            "تفضيل المظهر (الوضع الفاتح / الداكن)",
+            "لغة النصوص المفضلة",
+            "خيارات التصدير (أولوية الصوت الرسمي، تضمين المحاضرات الفارغة، تضمين روابط الموارد، وتجميع المرفقات في ملف ZIP)"
+          ],
+          p2: "تبقى هذه الإعدادات على جهازك المحلي فقط، ولا تتم مزامنتها عبر `chrome.storage.sync` أو إرسالها إلى خوادمنا أو أي طرف ثالث."
+        },
+        s3: {
+          title: "3. معالجة بيانات الدورة وطلبات الشبكة",
+          p1: "عند استخدام الإضافة في صفحة دورة مسجل بها على Udemy أو Udemy Business، فإنها تقوم بما يلي:",
+          items: [
+            "قراءة البيانات الوصفية للمحاضرات، ونصوص المقالات، ومسارات الترجمة (WebVTT)، وبيانات الموارد الإضافية",
+            "تنسيق المحتوى في ملف Markdown (`.md`) أو تجميعه في أرشيف ZIP (`.zip`)"
+          ],
+          p2: "تتم جميع عمليات التحليل والتنسيق وإنشاء ملفات ZIP محليًا بالكامل داخل متصفحك، ويتم حفظ الملفات الناتجة مباشرة في التنزيلات المحلية. لا يتم إرسال أي نصوص أو محتوى دورة إلى Studio Nova Works أو أي خادم خارجي.",
+          p3: "لغرض استرداد ملفات الترجمة والمرفقات المطلوبة فقط، يرسل متصفحك طلبات HTTPS مباشرة إلى Udemy ونطاقات توصيل المحتوى الرسمية الخاصة بها (`*.udemy.com` و`*.udemycdn.com` و`*.amazonaws.com` و`*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. أذونات إضافة Chrome",
+          p1: "تطلب الإضافة الحد الأدنى فقط من الأذونات اللازمة للتشغيل:",
+          items: [
+            { code: "sidePanel", desc: "يعرض مساحة عمل الإضافة بجانب مشغل دورات Udemy." },
+            { code: "storage", desc: "يحفظ تفضيلات المستخدم المحلية الموضحة في القسم 2 على جهازك." },
+            { code: "tabs", desc: "يتحقق من عنوان URL لعلامة التبويب النشطة للتأكد من أنها صفحة دورة صالحة على Udemy أو Udemy Business (`https://*.udemy.com/course/*`) وتحديث حالة اللوحة الجانبية. لا يتم قراءة أو تخزين سجل التصفح على المواقع الأخرى." },
+            { code: "scripting", desc: "يطبق البرنامج النصي للإضافة على علامات تبويب Udemy المفتوحة بالفعل فور التثبيت أو التحديث لتتمكن من استخدامها دون إعادة تحميل الصفحة." },
+            { label: "أذونات المضيف", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "مطلوبة لقراءة بيانات منهج الدورة وتنزيل ملفات الترجمة الموقعة WebVTT ومرفقات المحاضرات مباشرة إلى جهازك." }
+          ]
+        },
+        s5: {
+          title: "5. خدمات الطرف الثالث والتحليلات والإعلانات",
+          items: [
+            "لا تستخدم الإضافة أي أدوات تحليلات (مثل Google Analytics) أو حزم تتبع أو شبكات إعلانية.",
+            "لا تقوم الإضافة بتحميل أو تنفيذ تعليمات برمجية مستضافة عن بُعد.",
+            "نحن لا نبيع أو نؤجر أو نشارك أو نكشف بيانات المستخدمين لأي طرف ثالث."
+          ]
+        },
+        s6: {
+          title: "6. الاحتفاظ بالبيانات وحذفها",
+          p1: "يتم حذف جميع التفضيلات المخزنة محليًا نهائيًا عند إلغاء تثبيت الإضافة من Chrome أو مسح بيانات التخزين الخاصة بالإضافات في المتصفح. نظرًا لعدم تخزين أي بيانات على خوادم خارجية، فلا يلزم تقديم طلب منفصل لحذف البيانات."
+        },
+        s7: {
+          title: "7. الامتثال لسياسات سوق Chrome الإلكتروني",
+          p1: "يلتزم استخدام الإضافة لواجهات برمجة التطبيقات والمعلومات بسياسات برنامج مطوري سوق Chrome الإلكتروني، بما في ذلك متطلبات الاستخدام المحدود (Limited Use). تُستخدم المعلومات التي تصل إليها الإضافة حصريًا لتقديم وظيفتها الأساسية فقط."
+        },
+        s8: {
+          title: "8. التغييرات على سياسة الخصوصية هذه",
+          p1: 'قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس التغييرات في ميزات الإضافة أو القوانين المعمول بها أو متطلبات سوق Chrome الإلكتروني. سيتم الإشارة إلى أي تحديثات بتعديل تاريخ "آخر تحديث" في أعلى هذه الصفحة.'
+        },
+        s9: {
+          title: "9. معلومات المطور والروابط ذات الصلة",
+          p1: "للحصول على المعلومات العامة والتحديثات حول هذه الإضافة، يرجى زيارة:",
+          devLabel: "المطور:",
+          infoLabel: "صفحة المعلومات:",
+          note: "ملاحظة: هذه الإضافة أداة شخصية مجانية ومطورة بشكل مستقل وتُقدم كما هي، ولا يتم توفير دعم فني مخصص أو الرد على الاستفسارات الفردية بشكل عام."
+        }
+      },
+
+      de: {
+        dir: "ltr",
+        langLabel: "Sprache",
+        docTitle: "Datenschutzerklärung — UdeVault",
+        h1: "Datenschutzerklärung — UdeVault",
+        lastUpdatedLabel: "Zuletzt aktualisiert:",
+        lastUpdatedValue: "18. November 2026",
+        developerLabel: "Entwickler:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works („wir“, „uns“) respektiert Ihre Privatsphäre und schützt Ihre Daten bei der Nutzung der Google-Chrome-Erweiterung „UdeVault - Full Course Transcript & Resource Archiver for Udemy“ (die „Erweiterung“). Diese Datenschutzerklärung erläutert, wie die Erweiterung mit Informationen umgeht.',
+        s1: {
+          title: "1. Keine Erhebung personenbezogener Daten",
+          p1: "Die Erweiterung erhebt, speichert oder überträgt keine personenbezogenen Daten (wie Name, E-Mail-Adresse, Zugangsdaten oder Zahlungsinformationen), keinen Browserverlauf und keinen Lernfortschritt.",
+          p2: "Die Erweiterung erfordert keine Registrierung und keine Anmeldung."
+        },
+        s2: {
+          title: "2. Lokal auf Ihrem Gerät gespeicherte Einstellungen",
+          p1: "Um Ihre Einstellungen sitzungsübergreifend zu speichern, legt die Erweiterung ausschließlich folgende Benutzereinstellungen lokal in Ihrem Browser über `chrome.storage.local` und den `localStorage` der Erweiterung ab:",
+          items: [
+            "Spracheinstellung der Benutzeroberfläche (`uiLang` / `lang`)",
+            "Design-Einstellung (Hell-/Dunkelmodus)",
+            "Bevorzugte Transkriptsprache",
+            "Export-Optionen (Priorität für offizielle Audiosprache, Einbeziehung leerer Lektionen, Ressourcen-Links und ZIP-Bündelung von Anhängen)"
+          ],
+          p2: "Diese Einstellungen verbleiben ausschließlich auf Ihrem lokalen Gerät. Sie werden niemals über `chrome.storage.sync` synchronisiert oder an unsere Server bzw. Dritte übertragen."
+        },
+        s3: {
+          title: "3. Verarbeitung von Kursdaten und Netzwerkanfragen",
+          p1: "Wenn Sie die Erweiterung auf einer von Ihnen belegten Udemy- oder Udemy-Business-Kursseite verwenden, führt sie folgende Aktionen aus:",
+          items: [
+            "Auslesen von Vorlesungs-Metadaten, Artikeltexten, Untertitelspuren (WebVTT) und Metadaten zu Zusatzressourcen",
+            "Formatierung der Inhalte in eine Markdown-Datei (`.md`) oder Verpackung in ein ZIP-Archiv (`.zip`)"
+          ],
+          p2: "Sämtliche Analysen, Formatierungen und ZIP-Erstellungen erfolgen vollständig lokal in Ihrem Browser (On-Device), und die erzeugten Dateien werden direkt in Ihren lokalen Downloads gespeichert. Es werden niemals Transkripte oder Kursinhalte an Studio Nova Works oder externe Server gesendet.",
+          p3: "Ausschließlich zum Abrufen der von Ihnen angeforderten Untertitel und Zusatzmaterialien sendet Ihr Browser direkte HTTPS-Anfragen an Udemy und dessen offizielle Auslieferungsdomains (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` und `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Berechtigungen der Chrome-Erweiterung",
+          p1: "Die Erweiterung fordert nur die für den Betrieb minimal erforderlichen Berechtigungen an:",
+          items: [
+            { code: "sidePanel", desc: "Zeigt den Arbeitsbereich der Erweiterung neben dem Udemy-Kursplayer an." },
+            { code: "storage", desc: "Speichert die in Abschnitt 2 beschriebenen lokalen Benutzereinstellungen auf Ihrem Gerät." },
+            { code: "tabs", desc: "Prüft die URL des aktiven Tabs, um festzustellen, ob es sich um eine gültige Udemy- oder Udemy-Business-Kursseite (`https://*.udemy.com/course/*`) handelt, und aktualisiert den Zustand des Side Panels. Der Browserverlauf anderer Websites wird niemals gelesen oder gespeichert." },
+            { code: "scripting", desc: "Wendet das Content-Skript nach der Installation oder Aktualisierung sofort auf bereits geöffnete Udemy-Kurstabs an, damit kein Neuladen nötig ist." },
+            { label: "Host-Berechtigungen", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Erforderlich zum Lesen von Kursstrukturdaten sowie zum direkten Herunterladen signierter WebVTT-Untertitel und Kursanhänge auf Ihr Gerät." }
+          ]
+        },
+        s5: {
+          title: "5. Drittanbieterdienste, Analysen und Werbung",
+          items: [
+            "Die Erweiterung verwendet keine Analyse-Tools (wie Google Analytics), Tracking-SDKs oder Werbenetzwerke.",
+            "Die Erweiterung lädt keinen extern gehosteten Programmcode nach.",
+            "Wir verkaufen, vermieten, teilen oder offenlegen niemals Nutzerdaten an Dritte."
+          ]
+        },
+        s6: {
+          title: "6. Datenspeicherung und Löschung",
+          p1: "Alle lokal gespeicherten Einstellungen werden dauerhaft gelöscht, wenn Sie die Erweiterung aus Chrome deinstallieren oder die Speicher-/Websitedaten der Erweiterung im Browser löschen. Da keine Daten auf externen Servern gespeichert werden, ist kein gesonderter Löschantrag erforderlich."
+        },
+        s7: {
+          title: "7. Einhaltung der Chrome Web Store-Richtlinien",
+          p1: "Die Nutzung von Browser-APIs und Informationen durch die Erweiterung entspricht den Programmrichtlinien für Entwickler des Chrome Web Store einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use)."
+        },
+        s8: {
+          title: "8. Änderungen dieser Datenschutzerklärung",
+          p1: "Wir können diese Datenschutzerklärung gelegentlich aktualisieren, um Änderungen an Funktionen, geltendem Recht oder den Anforderungen des Chrome Web Store widerzuspiegeln. Aktualisierungen werden durch das Datum unter „Zuletzt aktualisiert“ oben auf dieser Seite kenntlich gemacht."
+        },
+        s9: {
+          title: "9. Entwicklerinformationen & weiterführende Links",
+          p1: "Allgemeine Informationen und Updates zu dieser Erweiterung finden Sie unter:",
+          devLabel: "Entwickler:",
+          infoLabel: "Informationsseite:",
+          note: "Hinweis: Diese Erweiterung ist ein kostenloses, unabhängig entwickeltes privates Tool und wird ohne Gewähr bereitgestellt. Ein dedizierter technischer Support oder die Beantwortung individueller Anfragen wird grundsätzlich nicht angeboten."
+        }
+      },
+
+      es: {
+        dir: "ltr",
+        langLabel: "Idioma",
+        docTitle: "Política de Privacidad — UdeVault",
+        h1: "Política de Privacidad — UdeVault",
+        lastUpdatedLabel: "Última actualización:",
+        lastUpdatedValue: "18 de noviembre de 2026",
+        developerLabel: "Desarrollador:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("nosotros") respeta su privacidad y se compromete a proteger sus datos al utilizar la extensión de Google Chrome "UdeVault - Full Course Transcript & Resource Archiver for Udemy" (la "Extensión"). Esta Política de Privacidad explica cómo la Extensión trata la información.',
+        s1: {
+          title: "1. Sin recopilación de datos personales",
+          p1: "La Extensión no recopila, almacena ni transmite ningún dato de identificación personal (como nombre, correo electrónico, credenciales de cuenta o datos de pago), historial de navegación ni progreso de aprendizaje.",
+          p2: "La Extensión no requiere registro de usuario ni inicio de sesión."
+        },
+        s2: {
+          title: "2. Configuración almacenada localmente en su dispositivo",
+          p1: "Para recordar sus preferencias entre sesiones, la Extensión guarda únicamente los siguientes ajustes de usuario de forma local en su navegador mediante `chrome.storage.local` y `localStorage` de la extensión:",
+          items: [
+            "Preferencia de idioma de la interfaz (`uiLang` / `lang`)",
+            "Preferencia de tema (modo claro / oscuro)",
+            "Idioma preferido para las transcripciones",
+            "Opciones de exportación (prioridad de audio oficial, inclusión de clases vacías, inclusión de enlaces a recursos y empaquetado de adjuntos en ZIP)"
+          ],
+          p2: "Estos ajustes permanecen estrictamente en su dispositivo local. Nunca se sincronizan mediante `chrome.storage.sync` ni se envían a nuestros servidores ni a terceros."
+        },
+        s3: {
+          title: "3. Procesamiento de datos del curso y solicitudes de red",
+          p1: "Al utilizar la Extensión en una página de curso de Udemy o Udemy Business en la que esté inscrito, realiza las siguientes acciones:",
+          items: [
+            "Lee metadatos de las clases, textos de artículos, pistas de subtítulos (WebVTT) y metadatos de recursos complementarios",
+            "Da formato al contenido en un archivo Markdown (`.md`) o lo empaqueta en un archivo ZIP (`.zip`)"
+          ],
+          p2: "Todo el análisis, formato y empaquetado ZIP se realiza íntegramente de forma local dentro de su navegador, y los archivos resultantes se guardan directamente en sus descargas locales. Nunca se envían transcripciones ni contenido del curso a Studio Nova Works ni a servidores externos.",
+          p3: "Únicamente para obtener los subtítulos y archivos adjuntos solicitados por usted, su navegador envía solicitudes HTTPS directas a Udemy y sus dominios oficiales de distribución de contenido (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` y `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Permisos de la extensión de Chrome",
+          p1: "La Extensión solicita únicamente los permisos mínimos necesarios para funcionar:",
+          items: [
+            { code: "sidePanel", desc: "Muestra el panel de trabajo de la Extensión junto al reproductor de cursos de Udemy." },
+            { code: "storage", desc: "Guarda en su dispositivo las preferencias locales descritas en la Sección 2." },
+            { code: "tabs", desc: "Comprueba la URL de la pestaña activa para verificar si es una página válida de curso de Udemy o Udemy Business (`https://*.udemy.com/course/*`) y actualizar el panel lateral. Nunca se lee ni almacena el historial de otros sitios." },
+            { code: "scripting", desc: "Aplica el script de contenido en las pestañas de cursos de Udemy ya abiertas tras instalar o actualizar la extensión para poder usarla sin recargar la página." },
+            { label: "Permisos de host", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Necesarios para leer la estructura del curso y descargar pistas de subtítulos WebVTT firmadas y archivos adjuntos directamente a su dispositivo." }
+          ]
+        },
+        s5: {
+          title: "5. Servicios de terceros, analíticas y publicidad",
+          items: [
+            "La Extensión no utiliza herramientas de análisis (como Google Analytics), SDKs de seguimiento ni redes publicitarias.",
+            "La Extensión no carga ni ejecuta código alojado de forma remota.",
+            "Nunca vendemos, alquilamos, compartimos ni divulgamos datos de los usuarios a terceros."
+          ]
+        },
+        s6: {
+          title: "6. Conservación y eliminación de datos",
+          p1: "Todas las preferencias almacenadas localmente se eliminan de forma permanente al desinstalar la Extensión de Chrome o al borrar los datos de almacenamiento del navegador. Dado que no se almacenan datos en servidores externos, no es necesario solicitar ninguna eliminación adicional."
+        },
+        s7: {
+          title: "7. Cumplimiento de las políticas de Chrome Web Store",
+          p1: "El uso de las API del navegador y de la información por parte de la Extensión cumple con las Políticas del programa para desarrolladores de Chrome Web Store, incluidos los requisitos de Uso Limitado (Limited Use)."
+        },
+        s8: {
+          title: "8. Cambios en esta Política de Privacidad",
+          p1: 'Podemos actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en las funciones de la Extensión, leyes aplicables o requisitos de Chrome Web Store. Cualquier actualización se indicará modificando la fecha de "Última actualización" en la parte superior.'
+        },
+        s9: {
+          title: "9. Información del desarrollador y enlaces relacionados",
+          p1: "Para obtener información general y novedades sobre esta Extensión, visite:",
+          devLabel: "Desarrollador:",
+          infoLabel: "Página informativa:",
+          note: "Nota: Esta Extensión es una herramienta personal gratuita desarrollada de forma independiente y se ofrece «tal cual». Por lo general, no se ofrece soporte técnico dedicado ni atención a consultas individuales."
+        }
+      },
+
+      fr: {
+        dir: "ltr",
+        langLabel: "Langue",
+        docTitle: "Politique de confidentialité — UdeVault",
+        h1: "Politique de confidentialité — UdeVault",
+        lastUpdatedLabel: "Dernière mise à jour :",
+        lastUpdatedValue: "18 novembre 2026",
+        developerLabel: "Développeur :",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works (« nous ») respecte votre vie privée et s\'engage à protéger vos données lors de l\'utilisation de l\'extension Google Chrome « UdeVault - Full Course Transcript & Resource Archiver for Udemy » (l\'« Extension »). La présente politique explique comment l\'Extension traite les informations.',
+        s1: {
+          title: "1. Aucune collecte de données personnelles",
+          p1: "L'Extension ne collecte, ne stocke et ne transmet aucune information personnellement identifiable (nom, adresse e-mail, identifiants ou coordonnées bancaires), ni votre historique de navigation ou votre progression d'apprentissage.",
+          p2: "L'Extension ne nécessite aucune inscription ni connexion à un compte."
+        },
+        s2: {
+          title: "2. Paramètres stockés localement sur votre appareil",
+          p1: "Pour mémoriser vos préférences d'une session à l'autre, l'Extension enregistre uniquement les paramètres suivants localement dans votre navigateur via `chrome.storage.local` et le `localStorage` de l'extension :",
+          items: [
+            "Langue d'affichage de l'interface (`uiLang` / `lang`)",
+            "Préférence de thème (mode clair / sombre)",
+            "Langue de transcription préférée",
+            "Options d'exportation (priorité à l'audio officiel, inclusion des leçons vides, inclusion des liens de ressources et archivage ZIP des pièces jointes)"
+          ],
+          p2: "Ces paramètres restent strictement sur votre appareil local. Ils ne sont jamais synchronisés via `chrome.storage.sync` ni transmis à nos serveurs ou à des tiers."
+        },
+        s3: {
+          title: "3. Traitement des données de cours et requêtes réseau",
+          p1: "Lorsque vous utilisez l'Extension sur une page de cours Udemy ou Udemy Business auquel vous êtes inscrit, elle effectue les actions suivantes :",
+          items: [
+            "Lecture des métadonnées des leçons, des articles, des pistes de sous-titres (WebVTT) et des métadonnées des ressources complémentaires",
+            "Mise en forme du contenu dans un fichier Markdown (`.md`) ou création d'une archive ZIP (`.zip`)"
+          ],
+          p2: "L'ensemble de l'analyse, de la mise en forme et de la création du ZIP s'effectue entièrement en local dans votre navigateur, et les fichiers générés sont enregistrés directement dans vos téléchargements locaux. Aucune transcription ni aucun contenu de cours n'est envoyé à Studio Nova Works ou à un serveur tiers.",
+          p3: "Uniquement afin de récupérer les sous-titres et pièces jointes que vous demandez, votre navigateur envoie des requêtes HTTPS directes vers Udemy et ses domaines officiels de diffusion (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` et `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Autorisations de l'extension Chrome",
+          p1: "L'Extension demande uniquement les autorisations minimales nécessaires à son fonctionnement :",
+          items: [
+            { code: "sidePanel", desc: "Affiche l'espace de travail de l'Extension à côté du lecteur de cours Udemy." },
+            { code: "storage", desc: "Enregistre sur votre appareil les préférences locales décrites à la section 2." },
+            { code: "tabs", desc: "Vérifie l'URL de l'onglet actif pour confirmer qu'il s'agit d'une page de cours Udemy ou Udemy Business valide (`https://*.udemy.com/course/*`) et met à jour le panneau latéral. L'historique des autres sites n'est jamais lu ni stocké." },
+            { code: "scripting", desc: "Applique le script de contenu aux onglets Udemy déjà ouverts juste après l'installation ou la mise à jour afin d'éviter un rechargement de la page." },
+            { label: "Autorisations d'hôte", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Nécessaires pour lire la structure du cours et télécharger directement sur votre appareil les pistes WebVTT signées et les pièces jointes." }
+          ]
+        },
+        s5: {
+          title: "5. Services tiers, analyses et publicité",
+          items: [
+            "L'Extension n'utilise aucun outil d'analyse (tel que Google Analytics), aucun SDK de suivi et aucun réseau publicitaire.",
+            "L'Extension ne charge ni n'exécute aucun code hébergé à distance.",
+            "Nous ne vendons, ne louons, ne partageons et ne divulguons jamais les données des utilisateurs à des tiers."
+          ]
+        },
+        s6: {
+          title: "6. Conservation et suppression des données",
+          p1: "Toutes les préférences stockées localement sont définitivement supprimées lorsque vous désinstallez l'Extension de Chrome ou effacez les données de stockage du navigateur. Aucune donnée n'étant conservée sur un serveur externe, aucune demande de suppression distincte n'est nécessaire."
+        },
+        s7: {
+          title: "7. Conformité aux règles du Chrome Web Store",
+          p1: "L'utilisation des API du navigateur et des informations par l'Extension est conforme au règlement du programme pour les développeurs du Chrome Web Store, y compris aux exigences d'utilisation limitée (Limited Use)."
+        },
+        s8: {
+          title: "8. Modifications de cette politique de confidentialité",
+          p1: "Nous pouvons mettre à jour cette politique de confidentialité afin de refléter les évolutions des fonctionnalités, des lois applicables ou des exigences du Chrome Web Store. Toute mise à jour sera signalée par la modification de la date de « Dernière mise à jour » en haut de cette page."
+        },
+        s9: {
+          title: "9. Informations sur le développeur et liens utiles",
+          p1: "Pour obtenir des informations générales et les actualités concernant cette Extension, veuillez consulter :",
+          devLabel: "Développeur :",
+          infoLabel: "Page d'information :",
+          note: "Remarque : cette Extension est un outil personnel gratuit développé de manière indépendante et fourni « en l'état ». Aucun support technique dédié ni réponse aux demandes individuelles n'est en principe assuré."
+        }
+      },
+
+      hi: {
+        dir: "ltr",
+        langLabel: "भाषा",
+        docTitle: "गोपनीयता नीति — UdeVault",
+        h1: "गोपनीयता नीति — UdeVault",
+        lastUpdatedLabel: "अंतिम अपडेट:",
+        lastUpdatedValue: "18 नवंबर 2026",
+        developerLabel: "डेवलपर:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("हम") आपकी गोपनीयता का सम्मान करता है और Google Chrome एक्सटेंशन "UdeVault - Full Course Transcript & Resource Archiver for Udemy" ("एक्सटेंशन") का उपयोग करते समय आपके डेटा की सुरक्षा के लिए प्रतिबद्ध है। यह गोपनीयता नीति बताती है कि एक्सटेंशन जानकारी को कैसे संभालता है।',
+        s1: {
+          title: "1. व्यक्तिगत डेटा का कोई संग्रह नहीं",
+          p1: "यह एक्सटेंशन कोई भी व्यक्तिगत रूप से पहचान योग्य जानकारी (जैसे आपका नाम, ईमेल पता, खाता क्रेडेंशियल या भुगतान विवरण), ब्राउज़िंग इतिहास या सीखने की प्रगति एकत्र, संग्रहीत या प्रसारित नहीं करता है।",
+          p2: "एक्सटेंशन के लिए उपयोगकर्ता पंजीकरण या लॉगिन की आवश्यकता नहीं है।"
+        },
+        s2: {
+          title: "2. आपके डिवाइस पर स्थानीय रूप से सहेजी गई सेटिंग्स",
+          p1: "सत्रों के बीच आपकी प्राथमिकताओं को याद रखने के लिए, एक्सटेंशन केवल निम्नलिखित उपयोगकर्ता सेटिंग्स को आपके ब्राउज़र में `chrome.storage.local` और एक्सटेंशन के `localStorage` का उपयोग करके स्थानीय रूप से सहेजता है:",
+          items: [
+            "UI प्रदर्शन भाषा प्राथमिकता (`uiLang` / `lang`)",
+            "थीम प्राथमिकता (लाइट / डार्क मोड)",
+            "पसंदीदा ट्रांसक्रिप्ट भाषा",
+            "निर्यात विकल्प टॉगल (आधिकारिक ऑडियो प्राथमिकता, खाली व्याख्यान शामिल करना, संसाधन लिंक शामिल करना, और अनुलग्नकों की ZIP बंडलिंग)"
+          ],
+          p2: "ये सेटिंग्स केवल आपके स्थानीय डिवाइस पर रहती हैं। इन्हें कभी भी `chrome.storage.sync` के माध्यम से सिंक नहीं किया जाता या हमारे सर्वर या किसी तीसरे पक्ष को नहीं भेजा जाता।"
+        },
+        s3: {
+          title: "3. कोर्स डेटा प्रोसेसिंग और नेटवर्क अनुरोध",
+          p1: "जब आप किसी नामांकित Udemy या Udemy Business कोर्स पेज पर एक्सटेंशन का उपयोग करते हैं, तो यह निम्नलिखित कार्य करता है:",
+          items: [
+            "व्याख्यान मेटाडेटा, लेख पाठ, कैप्शन ट्रैक (WebVTT), और पूरक संसाधन मेटाडेटा पढ़ता है",
+            "सामग्री को Markdown फ़ाइल (`.md`) में फ़ॉर्मेट करता है या ZIP संग्रह (`.zip`) में पैक करता है"
+          ],
+          p2: "सभी पार्सिंग, फ़ॉर्मेटिंग और ZIP पैकेजिंग पूरी तरह से आपके ब्राउज़र के भीतर स्थानीय रूप से (ऑन-डिवाइस) होती है, और परिणामी फ़ाइलें सीधे आपके स्थानीय डाउनलोड में सहेजी जाती हैं। कोई भी ट्रांसक्रिप्ट या कोर्स सामग्री Studio Nova Works या किसी बाहरी सर्वर पर नहीं भेजी जाती।",
+          p3: "केवल आपके द्वारा अनुरोधित सबटाइटल और अनुलग्नक प्राप्त करने के लिए, आपका ब्राउज़र Udemy और उसके आधिकारिक सामग्री वितरण डोमेन (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com`, और `*.cloudfront.net`) को सीधे HTTPS अनुरोध भेजता है।"
+        },
+        s4: {
+          title: "4. Chrome एक्सटेंशन अनुमतियाँ",
+          p1: "एक्सटेंशन केवल संचालन के लिए आवश्यक न्यूनतम अनुमतियाँ मांगता है:",
+          items: [
+            { code: "sidePanel", desc: "Udemy कोर्स प्लेयर के साथ एक्सटेंशन का कार्यक्षेत्र प्रदर्शित करता है।" },
+            { code: "storage", desc: "अनुभाग 2 में वर्णित स्थानीय उपयोगकर्ता प्राथमिकताओं को आपके डिवाइस पर सहेजता है।" },
+            { code: "tabs", desc: "सक्रिय टैब के URL की जाँच करता है कि यह एक मान्य Udemy या Udemy Business कोर्स पेज (`https://*.udemy.com/course/*`) है या नहीं और साइड पैनल को अपडेट करता है। अन्य वेबसाइटों का ब्राउज़िंग इतिहास कभी नहीं पढ़ा या सहेजा जाता।" },
+            { code: "scripting", desc: "इंस्टॉलेशन या अपडेट के तुरंत बाद पहले से खुले Udemy कोर्स टैब पर सामग्री स्क्रिप्ट लागू करता है ताकि पृष्ठ को रीलोड किए बिना उपयोग किया जा सके।" },
+            { label: "होस्ट अनुमतियाँ", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "कोर्स पाठ्यक्रम डेटा पढ़ने और हस्ताक्षरित WebVTT कैप्शन ट्रैक व व्याख्यान अनुलग्नकों को सीधे आपके डिवाइस पर डाउनलोड करने के लिए आवश्यक।" }
+          ]
+        },
+        s5: {
+          title: "5. तृतीय-पक्ष सेवाएँ, एनालिटिक्स और विज्ञापन",
+          items: [
+            "एक्सटेंशन किसी भी एनालिटिक्स टूल (जैसे Google Analytics), ट्रैकिंग SDK या विज्ञापन नेटवर्क का उपयोग नहीं करता है।",
+            "एक्सटेंशन दूरस्थ रूप से होस्ट किए गए कोड को लोड या निष्पादित नहीं करता है।",
+            "हम कभी भी उपयोगकर्ता डेटा को तीसरे पक्ष को बेचते, किराए पर देते, साझा करते या प्रकट नहीं करते।"
+          ]
+        },
+        s6: {
+          title: "6. डेटा प्रतिधारण और विलोपन",
+          p1: "जब आप Chrome से एक्सटेंशन को अनइंस्टॉल करते हैं या ब्राउज़र का एक्सटेंशन संग्रहण साफ़ करते हैं, तो सभी स्थानीय रूप से सहेजी गई प्राथमिकताएँ स्थायी रूप से हटा दी जाती हैं। चूँकि किसी बाहरी सर्वर पर कोई डेटा संग्रहीत नहीं है, इसलिए अलग से डेटा हटाने के अनुरोध की आवश्यकता नहीं है।"
+        },
+        s7: {
+          title: "7. Chrome Web Store नीतियों का अनुपालन",
+          p1: "एक्सटेंशन द्वारा ब्राउज़र API और जानकारी का उपयोग Chrome Web Store डेवलपर प्रोग्राम नीतियों का पालन करता है, जिसमें Limited Use आवश्यकताएँ शामिल हैं।"
+        },
+        s8: {
+          title: "8. इस गोपनीयता नीति में परिवर्तन",
+          p1: 'हम एक्सटेंशन की सुविधाओं, लागू कानूनों या Chrome Web Store आवश्यकताओं में बदलाव को दर्शाने के लिए समय-समय पर इस गोपनीयता नीति को अपडेट कर सकते हैं। किसी भी अपडेट को इस पृष्ठ के शीर्ष पर "अंतिम अपडेट" तिथि बदलकर दर्शाया जाएगा।'
+        },
+        s9: {
+          title: "9. डेवलपर जानकारी और संबंधित लिंक",
+          p1: "इस एक्सटेंशन के बारे में सामान्य जानकारी और अपडेट के लिए कृपया देखें:",
+          devLabel: "डेवलपर:",
+          infoLabel: "जानकारी पृष्ठ:",
+          note: "नोट: यह एक्सटेंशन एक निःशुल्क, स्वतंत्र रूप से विकसित व्यक्तिगत टूल है जो 'जैसा है' के आधार पर प्रदान किया जाता है। समर्पित तकनीकी सहायता या व्यक्तिगत पूछताछ का उत्तर सामान्यतः प्रदान नहीं किया जाता है।"
+        }
+      },
+
+      id: {
+        dir: "ltr",
+        langLabel: "Bahasa",
+        docTitle: "Kebijakan Privasi — UdeVault",
+        h1: "Kebijakan Privasi — UdeVault",
+        lastUpdatedLabel: "Terakhir Diperbarui:",
+        lastUpdatedValue: "18 November 2026",
+        developerLabel: "Pengembang:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("kami") menghormati privasi Anda dan berkomitmen melindungi data Anda saat menggunakan ekstensi Google Chrome "UdeVault - Full Course Transcript & Resource Archiver for Udemy" ("Ekstensi"). Kebijakan Privasi ini menjelaskan cara Ekstensi menangani informasi.',
+        s1: {
+          title: "1. Tidak Ada Pengumpulan Data Pribadi",
+          p1: "Ekstensi tidak mengumpulkan, menyimpan, atau mengirimkan informasi identitas pribadi apa pun (seperti nama, alamat email, kredensial akun, atau detail pembayaran), riwayat penjelajahan, maupun progres belajar.",
+          p2: "Ekstensi tidak memerlukan pendaftaran pengguna atau login akun."
+        },
+        s2: {
+          title: "2. Pengaturan yang Disimpan Secara Lokal di Perangkat Anda",
+          p1: "Untuk mengingat preferensi Anda antar sesi, Ekstensi hanya menyimpan pengaturan pengguna berikut secara lokal di browser menggunakan `chrome.storage.local` dan `localStorage` ekstensi:",
+          items: [
+            "Preferensi bahasa tampilan UI (`uiLang` / `lang`)",
+            "Preferensi tema (mode Terang / Gelap)",
+            "Bahasa transkrip yang dipilih",
+            "Opsi ekspor (prioritas audio resmi, penyertaan kuliah kosong, penyertaan tautan sumber daya, dan pengemasan ZIP untuk lampiran)"
+          ],
+          p2: "Pengaturan ini tetap berada sepenuhnya di perangkat lokal Anda. Data tersebut tidak pernah disinkronkan melalui `chrome.storage.sync` atau dikirim ke server kami maupun pihak ketiga mana pun."
+        },
+        s3: {
+          title: "3. Pemrosesan Data Kursus dan Permintaan Jaringan",
+          p1: "Saat Anda menggunakan Ekstensi pada halaman kursus Udemy atau Udemy Business yang Anda ikuti, Ekstensi melakukan tindakan berikut:",
+          items: [
+            "Membaca metadata kuliah, teks artikel, trek takarir (WebVTT), dan metadata sumber daya tambahan",
+            "Memformat konten menjadi file Markdown (`.md`) atau mengemasnya ke dalam arsip ZIP (`.zip`)"
+          ],
+          p2: "Semua proses penguraian, pemformatan, dan pengemasan ZIP berlangsung sepenuhnya secara lokal di dalam browser Anda, dan file yang dihasilkan disimpan langsung ke unduhan lokal Anda. Tidak ada transkrip atau konten kursus yang dikirim ke Studio Nova Works atau server eksternal mana pun.",
+          p3: "Hanya untuk mengambil file takarir dan lampiran yang Anda minta, browser Anda mengirimkan permintaan HTTPS langsung ke Udemy dan domain pengiriman konten resminya (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com`, dan `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Izin Ekstensi Chrome",
+          p1: "Ekstensi hanya meminta izin minimum yang diperlukan agar dapat beroperasi:",
+          items: [
+            { code: "sidePanel", desc: "Menampilkan ruang kerja Ekstensi di samping pemutar kursus Udemy." },
+            { code: "storage", desc: "Menyimpan preferensi pengguna lokal yang dijelaskan di Bagian 2 pada perangkat Anda." },
+            { code: "tabs", desc: "Memeriksa URL tab aktif untuk memastikan bahwa halaman tersebut adalah halaman kursus Udemy atau Udemy Business yang valid (`https://*.udemy.com/course/*`) dan memperbarui status panel samping. Riwayat penjelajahan situs lain tidak pernah dibaca atau disimpan." },
+            { code: "scripting", desc: "Menerapkan skrip konten Ekstensi ke tab kursus Udemy yang sudah terbuka segera setelah pemasangan atau pembaruan tanpa perlu memuat ulang halaman." },
+            { label: "Izin Host", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Diperlukan untuk membaca data kurikulum kursus serta mengunduh trek takarir WebVTT bertanda tangan dan lampiran kuliah langsung ke perangkat Anda." }
+          ]
+        },
+        s5: {
+          title: "5. Layanan Pihak Ketiga, Analitik, dan Iklan",
+          items: [
+            "Ekstensi tidak menggunakan alat analitik (seperti Google Analytics), SDK pelacakan, atau jaringan iklan apa pun.",
+            "Ekstensi tidak memuat atau menjalankan kode yang dihosting dari jarak jauh.",
+            "Kami tidak pernah menjual, menyewakan, membagikan, atau mengungkapkan data pengguna kepada pihak ketiga."
+          ]
+        },
+        s6: {
+          title: "6. Penyimpanan dan Penghapusan Data",
+          p1: "Semua preferensi yang disimpan secara lokal akan dihapus secara permanen saat Anda mencopot pemasangan Ekstensi dari Chrome atau menghapus data penyimpanan ekstensi browser. Karena tidak ada data yang disimpan di server eksternal, tidak diperlukan permintaan penghapusan data terpisah."
+        },
+        s7: {
+          title: "7. Kepatuhan terhadap Kebijakan Chrome Web Store",
+          p1: "Penggunaan API browser dan informasi oleh Ekstensi mematuhi Kebijakan Program Pengembang Chrome Web Store, termasuk persyaratan Penggunaan Terbatas (Limited Use)."
+        },
+        s8: {
+          title: "8. Perubahan pada Kebijakan Privasi Ini",
+          p1: 'Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk mencerminkan perubahan fitur, hukum yang berlaku, atau persyaratan Chrome Web Store. Setiap pembaruan akan ditandai dengan memperbarui tanggal "Terakhir Diperbarui" di bagian atas halaman ini.'
+        },
+        s9: {
+          title: "9. Informasi Pengembang & Tautan Terkait",
+          p1: "Untuk informasi umum dan pembaruan mengenai Ekstensi ini, silakan kunjungi:",
+          devLabel: "Pengembang:",
+          infoLabel: "Halaman Informasi:",
+          note: "Catatan: Ekstensi ini adalah alat pribadi gratis yang dikembangkan secara independen dan disediakan 'sebagaimana adanya'. Dukungan teknis khusus atau pertanyaan individual umumnya tidak disediakan."
+        }
+      },
+
+      it: {
+        dir: "ltr",
+        langLabel: "Lingua",
+        docTitle: "Informativa sulla privacy — UdeVault",
+        h1: "Informativa sulla privacy — UdeVault",
+        lastUpdatedLabel: "Ultimo aggiornamento:",
+        lastUpdatedValue: "18 novembre 2026",
+        developerLabel: "Sviluppatore:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("noi") rispetta la tua privacy e si impegna a proteggere i tuoi dati durante l\'utilizzo dell\'estensione Google Chrome "UdeVault - Full Course Transcript & Resource Archiver for Udemy" (l\'"Estensione"). La presente Informativa spiega come l\'Estensione gestisce le informazioni.',
+        s1: {
+          title: "1. Nessuna raccolta di dati personali",
+          p1: "L'Estensione non raccoglie, memorizza o trasmette alcuna informazione personale identificabile (come nome, indirizzo email, credenziali dell'account o dettagli di pagamento), né la cronologia di navigazione o i progressi di apprendimento.",
+          p2: "L'Estensione non richiede alcuna registrazione o accesso a un account."
+        },
+        s2: {
+          title: "2. Impostazioni salvate localmente sul dispositivo",
+          p1: "Per ricordare le tue preferenze tra una sessione e l'altra, l'Estensione salva localmente nel browser solo le seguenti impostazioni tramite `chrome.storage.local` e il `localStorage` dell'estensione:",
+          items: [
+            "Preferenza della lingua dell'interfaccia (`uiLang` / `lang`)",
+            "Preferenza del tema (modalità Chiara / Scura)",
+            "Lingua preferita per le trascrizioni",
+            "Opzioni di esportazione (priorità all'audio ufficiale, inclusione delle lezioni vuote, inclusione dei link alle risorse e creazione di pacchetti ZIP per gli allegati)"
+          ],
+          p2: "Queste impostazioni rimangono esclusivamente sul tuo dispositivo locale. Non vengono mai sincronizzate tramite `chrome.storage.sync` né trasmesse ai nostri server o a terze parti."
+        },
+        s3: {
+          title: "3. Elaborazione dei dati del corso e richieste di rete",
+          p1: "Quando utilizzi l'Estensione su una pagina di un corso Udemy o Udemy Business a cui sei iscritto, esegue le seguenti operazioni:",
+          items: [
+            "Legge i metadati delle lezioni, il testo degli articoli, le tracce dei sottotitoli (WebVTT) e i metadati delle risorse aggiuntive",
+            "Formatta il contenuto in un file Markdown (`.md`) o lo comprime in un archivio ZIP (`.zip`)"
+          ],
+          p2: "Tutta l'analisi, la formattazione e la creazione dello ZIP avvengono interamente in locale all'interno del tuo browser e i file risultanti vengono salvati direttamente nei download locali. Nessuna trascrizione o contenuto del corso viene mai inviato a Studio Nova Works o a server esterni.",
+          p3: "Esclusivamente per recuperare i sottotitoli e gli allegati da te richiesti, il browser invia richieste HTTPS dirette a Udemy e ai suoi domini ufficiali di distribuzione dei contenuti (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` e `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Autorizzazioni dell'estensione Chrome",
+          p1: "L'Estensione richiede solo le autorizzazioni minime necessarie al funzionamento:",
+          items: [
+            { code: "sidePanel", desc: "Visualizza l'area di lavoro dell'Estensione accanto al lettore del corso Udemy." },
+            { code: "storage", desc: "Salva sul dispositivo le preferenze utente locali descritte nella Sezione 2." },
+            { code: "tabs", desc: "Controlla l'URL della scheda attiva per verificare che sia una pagina di corso Udemy o Udemy Business valida (`https://*.udemy.com/course/*`) e aggiorna il pannello laterale. La cronologia di altri siti non viene mai letta né salvata." },
+            { code: "scripting", desc: "Applica lo script di contenuto alle schede dei corsi Udemy già aperte subito dopo l'installazione o l'aggiornamento, senza dover ricaricare la pagina." },
+            { label: "Autorizzazioni host", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Necessarie per leggere i dati del programma del corso e scaricare direttamente sul dispositivo le tracce WebVTT firmate e gli allegati delle lezioni." }
+          ]
+        },
+        s5: {
+          title: "5. Servizi di terze parti, analisi e pubblicità",
+          items: [
+            "L'Estensione non utilizza strumenti di analisi (come Google Analytics), SDK di tracciamento o reti pubblicitarie.",
+            "L'Estensione non carica né esegue codice ospitato in remoto.",
+            "Non vendiamo, affittiamo, condividiamo o divulghiamo mai i dati degli utenti a terze parti."
+          ]
+        },
+        s6: {
+          title: "6. Conservazione ed eliminazione dei dati",
+          p1: "Tutte le preferenze salvate localmente vengono eliminate definitivamente quando disinstalli l'Estensione da Chrome o cancelli i dati di archiviazione del browser. Poiché nessun dato viene salvato su server esterni, non è necessaria alcuna richiesta separata di eliminazione."
+        },
+        s7: {
+          title: "7. Conformità alle norme del Chrome Web Store",
+          p1: "L'utilizzo delle API del browser e delle informazioni da parte dell'Estensione rispetta le Norme del programma per gli sviluppatori del Chrome Web Store, inclusi i requisiti di Uso Limitato (Limited Use)."
+        },
+        s8: {
+          title: "8. Modifiche alla presente Informativa sulla privacy",
+          p1: 'Potremmo aggiornare occasionalmente la presente Informativa sulla privacy per riflettere modifiche alle funzionalità, alle leggi applicabili o ai requisiti del Chrome Web Store. Eventuali aggiornamenti saranno indicati modificando la data di "Ultimo aggiornamento" in alto.'
+        },
+        s9: {
+          title: "9. Informazioni sullo sviluppatore e link correlati",
+          p1: "Per informazioni generali e aggiornamenti su questa Estensione, visita:",
+          devLabel: "Sviluppatore:",
+          infoLabel: "Pagina informativa:",
+          note: "Nota: questa Estensione è uno strumento personale gratuito sviluppato in modo indipendente e fornito «così com'è». In genere non viene fornito supporto tecnico dedicato né risposta a richieste individuali."
+        }
+      },
+
+      ko: {
+        dir: "ltr",
+        langLabel: "언어",
+        docTitle: "개인정보 처리방침 — UdeVault",
+        h1: "개인정보 처리방침 — UdeVault",
+        lastUpdatedLabel: "최종 업데이트:",
+        lastUpdatedValue: "2026년 11월 18일",
+        developerLabel: "개발자:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works(이하 "개발자")는 Google Chrome 확장 프로그램 "UdeVault - Full Course Transcript & Resource Archiver for Udemy"(이하 "본 확장 프로그램")를 사용할 때 사용자의 개인정보와 데이터를 보호하기 위해 최선을 다하고 있습니다. 본 개인정보 처리방침은 본 확장 프로그램이 정보를 처리하는 방식을 설명합니다.',
+        s1: {
+          title: "1. 개인정보를 수집하지 않음",
+          p1: "본 확장 프로그램은 개인을 식별할 수 있는 정보(이름, 이메일 주소, 계정 자격 증명, 결제 정보 등), 검색 기록 또는 학습 진도를 일절 수집, 저장 또는 외부로 전송하지 않습니다.",
+          p2: "사용자 등록이나 계정 로그인이 필요하지 않습니다."
+        },
+        s2: {
+          title: "2. 기기에 로컬로 저장되는 설정 정보",
+          p1: "세션 간 사용자 환경설정을 기억하기 위해 본 확장 프로그램은 `chrome.storage.local` 및 확장 프로그램의 `localStorage`를 사용하여 다음 사용자 설정만 브라우저에 로컬로 저장합니다.",
+          items: [
+            "UI 표시 언어 설정 (`uiLang` / `lang`)",
+            "테마 설정 (라이트 / 다크 모드)",
+            "선호하는 자막(스크립트) 언어",
+            "내보내기 옵션 토글 (공식 음성 우선, 빈 강의 포함, 리소스 링크 포함, 첨부 파일 ZIP 묶음 여부)"
+          ],
+          p2: "이 설정들은 사용자의 로컬 기기에만 저장됩니다. `chrome.storage.sync`를 통해 동기화되거나 개발자 서버 또는 제3자에게 전송되지 않습니다."
+        },
+        s3: {
+          title: "3. 강의 데이터 처리 및 네트워크 요청",
+          p1: "수강 중인 Udemy 또는 Udemy Business 강의 페이지에서 본 확장 프로그램을 사용하면 다음 작업을 수행합니다.",
+          items: [
+            "강의 메타데이터, 아티클 본문, 자막 트랙(WebVTT) 및 추가 리소스 메타데이터 읽기",
+            "콘텐츠를 Markdown 파일(`.md`)로 서식화하거나 ZIP 아카이브(`.zip`)로 패키징"
+          ],
+          p2: "모든 구문 분석, 서식 지정 및 ZIP 패키징은 브라우저 내부(온디바이스)에서 완전히 로컬로 수행되며, 생성된 파일은 로컬 다운로드 폴더에 직접 저장됩니다. 스크립트나 강의 콘텐츠가 Studio Nova Works 또는 외부 서버로 전송되는 일은 없습니다.",
+          p3: "사용자가 요청한 자막 및 첨부 자료를 가져오기 위한 목적으로만 브라우저에서 Udemy 및 공식 콘텐츠 전송 도메인(`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com`, `*.cloudfront.net`)으로 직접 HTTPS 요청을 보냅니다."
+        },
+        s4: {
+          title: "4. Chrome 확장 프로그램 권한",
+          p1: "본 확장 프로그램은 작동에 필요한 최소한의 권한만 요청합니다.",
+          items: [
+            { code: "sidePanel", desc: "Udemy 강의 플레이어 옆에 확장 프로그램 작업 공간을 표시합니다." },
+            { code: "storage", desc: "섹션 2에 설명된 로컬 사용자 설정을 기기에 저장합니다." },
+            { code: "tabs", desc: "현재 탭의 URL을 확인하여 유효한 Udemy 또는 Udemy Business 강의 페이지(`https://*.udemy.com/course/*`)인지 확인하고 사이드 패널 상태를 업데이트합니다. 다른 웹사이트의 검색 기록은 읽거나 저장하지 않습니다." },
+            { code: "scripting", desc: "설치 또는 업데이트 직후 이미 열려 있는 Udemy 강의 탭에 콘텐츠 스크립트를 적용하여 페이지를 새로고침하지 않고 바로 사용할 수 있게 합니다." },
+            { label: "호스트 권한", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "강의 커리큘럼 데이터를 읽고 서명된 WebVTT 자막 트랙 및 강의 첨부 파일을 기기로 직접 다운로드하는 데 필요합니다." }
+          ]
+        },
+        s5: {
+          title: "5. 제3자 서비스, 분석 및 광고",
+          items: [
+            "본 확장 프로그램은 Google Analytics 등의 분석 도구, 추적 SDK 또는 광고 네트워크를 사용하지 않습니다.",
+            "원격으로 호스팅되는 코드를 로드하거나 실행하지 않습니다.",
+            "사용자 데이터를 제3자에게 판매, 대여, 공유 또는 공개하지 않습니다."
+          ]
+        },
+        s6: {
+          title: "6. 데이터 보유 및 삭제",
+          p1: "로컬에 저장된 모든 설정은 Chrome에서 본 확장 프로그램을 제거하거나 브라우저의 확장 프로그램 저장소/사이트 데이터를 삭제할 때 영구적으로 삭제됩니다. 외부 서버에 저장되는 데이터가 없으므로 별도의 데이터 삭제 요청이 필요하지 않습니다."
+        },
+        s7: {
+          title: "7. Chrome 웹 스토어 정책 준수",
+          p1: "본 확장 프로그램의 브라우저 API 및 정보 사용은 제한된 사용(Limited Use) 요구사항을 포함한 Chrome 웹 스토어 개발자 프로그램 정책을 준수합니다."
+        },
+        s8: {
+          title: "8. 개인정보 처리방침 변경",
+          p1: "기능 변경, 관련 법률 또는 Chrome 웹 스토어 요구사항 변경을 반영하기 위해 본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 시 페이지 상단의 '최종 업데이트' 날짜가 갱신됩니다."
+        },
+        s9: {
+          title: "9. 개발자 정보 및 관련 링크",
+          p1: "본 확장 프로그램에 대한 일반 정보 및 업데이트는 다음 페이지에서 확인하실 수 있습니다.",
+          devLabel: "개발자:",
+          infoLabel: "정보 공개 페이지:",
+          note: "참고: 본 확장 프로그램은 무료로 제공되는 독립 개발 개인 도구로 '있는 그대로' 제공되며, 전담 기술 지원이나 개별 문의 응대는 원칙적으로 제공되지 않습니다."
+        }
+      },
+
+      pt: {
+        dir: "ltr",
+        langLabel: "Idioma",
+        docTitle: "Política de Privacidade — UdeVault",
+        h1: "Política de Privacidade — UdeVault",
+        lastUpdatedLabel: "Última atualização:",
+        lastUpdatedValue: "18 de novembro de 2026",
+        developerLabel: "Desenvolvedor:",
+        developerValue: "Studio Nova Works",
+        intro: 'A Studio Nova Works ("nós") respeita a sua privacidade e está comprometida em proteger os seus dados ao usar a extensão do Google Chrome "UdeVault - Full Course Transcript & Resource Archiver for Udemy" (a "Extensão"). Esta Política de Privacidade explica como a Extensão lida com as informações.',
+        s1: {
+          title: "1. Nenhuma coleta de dados pessoais",
+          p1: "A Extensão não coleta, armazena nem transmite quaisquer informações de identificação pessoal (como nome, endereço de e-mail, credenciais de conta ou detalhes de pagamento), histórico de navegação ou progresso de aprendizado.",
+          p2: "A Extensão não exige cadastro de usuário nem login em conta."
+        },
+        s2: {
+          title: "2. Configurações armazenadas localmente no seu dispositivo",
+          p1: "Para lembrar suas preferências entre sessões, a Extensão armazena apenas as seguintes configurações localmente no seu navegador usando `chrome.storage.local` e o `localStorage` da extensão:",
+          items: [
+            "Preferência de idioma da interface (`uiLang` / `lang`)",
+            "Preferência de tema (modo Claro / Escuro)",
+            "Idioma preferido das transcrições",
+            "Opções de exportação (prioridade de áudio oficial, inclusão de aulas vazias, inclusão de links de recursos e empacotamento ZIP de anexos)"
+          ],
+          p2: "Essas configurações permanecem estritamente no seu dispositivo local. Elas nunca são sincronizadas via `chrome.storage.sync` nem transmitidas aos nossos servidores ou a terceiros."
+        },
+        s3: {
+          title: "3. Processamento de dados do curso e solicitações de rede",
+          p1: "Quando você usa a Extensão em uma página de curso da Udemy ou Udemy Business em que está matriculado, ela executa as seguintes ações:",
+          items: [
+            "Lê metadados das aulas, textos de artigos, faixas de legendas (WebVTT) e metadados de recursos complementares",
+            "Formata o conteúdo em um arquivo Markdown (`.md`) ou empacota em um arquivo ZIP (`.zip`)"
+          ],
+          p2: "Toda a análise, formatação e criação do ZIP ocorrem inteiramente de forma local no seu navegador, e os arquivos gerados são salvos diretamente nos seus downloads locais. Nenhuma transcrição ou conteúdo do curso é enviado para a Studio Nova Works ou servidores externos.",
+          p3: "Exclusivamente para obter as legendas e os anexos solicitados por você, o navegador envia solicitações HTTPS diretas à Udemy e aos seus domínios oficiais de entrega de conteúdo (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` e `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Permissões da extensão do Chrome",
+          p1: "A Extensão solicita apenas as permissões mínimas necessárias para funcionar:",
+          items: [
+            { code: "sidePanel", desc: "Exibe o espaço de trabalho da Extensão ao lado do reprodutor de cursos da Udemy." },
+            { code: "storage", desc: "Salva no seu dispositivo as preferências locais descritas na Seção 2." },
+            { code: "tabs", desc: "Verifica a URL da guia ativa para confirmar se é uma página de curso válida da Udemy ou Udemy Business (`https://*.udemy.com/course/*`) e atualiza o painel lateral. O histórico de outros sites nunca é lido ou salvo." },
+            { code: "scripting", desc: "Aplica o script de conteúdo às guias de cursos da Udemy já abertas logo após a instalação ou atualização, dispensando o recarregamento da página." },
+            { label: "Permissões de host", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Necessárias para ler os dados do currículo do curso e baixar faixas WebVTT assinadas e anexos das aulas diretamente para o seu dispositivo." }
+          ]
+        },
+        s5: {
+          title: "5. Serviços de terceiros, análises e publicidade",
+          items: [
+            "A Extensão não utiliza ferramentas de análise (como Google Analytics), SDKs de rastreamento ou redes de anúncios.",
+            "A Extensão não carrega nem executa código hospedado remotamente.",
+            "Nunca vendemos, alugamos, compartilhamos ou divulgamos dados de usuários a terceiros."
+          ]
+        },
+        s6: {
+          title: "6. Retenção e exclusão de dados",
+          p1: "Todas as preferências armazenadas localmente são excluídas permanentemente quando você desinstala a Extensão do Chrome ou limpa os dados de armazenamento do navegador. Como nenhum dado é salvo em servidores externos, nenhuma solicitação de exclusão separada é necessária."
+        },
+        s7: {
+          title: "7. Conformidade com as políticas da Chrome Web Store",
+          p1: "O uso de APIs do navegador e informações pela Extensão segue as Políticas do Programa para Desenvolvedores da Chrome Web Store, incluindo os requisitos de Uso Limitado (Limited Use)."
+        },
+        s8: {
+          title: "8. Alterações nesta Política de Privacidade",
+          p1: 'Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças nos recursos, nas leis aplicáveis ou nos requisitos da Chrome Web Store. Quaisquer atualizações serão indicadas pela alteração da data de "Última atualização" no topo.'
+        },
+        s9: {
+          title: "9. Informações do desenvolvedor e links relacionados",
+          p1: "Para informações gerais e atualizações sobre esta Extensão, acesse:",
+          devLabel: "Desenvolvedor:",
+          infoLabel: "Página informativa:",
+          note: "Observação: esta Extensão é uma ferramenta pessoal gratuita desenvolvida de forma independente e fornecida «no estado em que se encontra». Suporte técnico dedicado ou atendimento a consultas individuais geralmente não são fornecidos."
+        }
+      },
+
+      ru: {
+        dir: "ltr",
+        langLabel: "Язык",
+        docTitle: "Политика конфиденциальности — UdeVault",
+        h1: "Политика конфиденциальности — UdeVault",
+        lastUpdatedLabel: "Последнее обновление:",
+        lastUpdatedValue: "18 ноября 2026 г.",
+        developerLabel: "Разработчик:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works («мы») уважает вашу конфиденциальность и стремится защищать ваши данные при использовании расширения Google Chrome «UdeVault - Full Course Transcript & Resource Archiver for Udemy» («Расширение»). В настоящей Политике конфиденциальности объясняется, как Расширение обрабатывает информацию.',
+        s1: {
+          title: "1. Отсутствие сбора персональных данных",
+          p1: "Расширение не собирает, не хранит и не передаёт никакие персональные данные (такие как имя, адрес электронной почты, учётные данные или платёжную информацию), историю просмотров или прогресс обучения.",
+          p2: "Расширение не требует регистрации пользователя или входа в учётную запись."
+        },
+        s2: {
+          title: "2. Настройки, хранящиеся локально на вашем устройстве",
+          p1: "Чтобы сохранять ваши предпочтения между сеансами, Расширение хранит локально в вашем браузере (с помощью `chrome.storage.local` и `localStorage` расширения) только следующие настройки:",
+          items: [
+            "Язык интерфейса (`uiLang` / `lang`)",
+            "Тема оформления (светлая / тёмная)",
+            "Предпочитаемый язык субтитров",
+            "Параметры экспорта (приоритет официальной озвучки, включение пустых лекций, включение ссылок на ресурсы и упаковка вложений в ZIP)"
+          ],
+          p2: "Эти настройки остаются исключительно на вашем локальном устройстве. Они никогда не синхронизируются через `chrome.storage.sync` и не передаются на наши серверы или третьим лицам."
+        },
+        s3: {
+          title: "3. Обработка данных курса и сетевые запросы",
+          p1: "При использовании Расширения на странице курса Udemy или Udemy Business, на который вы подписаны, оно выполняет следующие действия:",
+          items: [
+            "Считывает метаданные лекций, тексты статей, дорожки субтитров (WebVTT) и метаданные дополнительных материалов",
+            "Форматирует содержимое в файл Markdown (`.md`) или упаковывает в архив ZIP (`.zip`)"
+          ],
+          p2: "Весь разбор, форматирование и создание ZIP-архива выполняются полностью локально внутри вашего браузера, а итоговые файлы сохраняются напрямую в ваши локальные загрузки. Никакие субтитры или материалы курса не отправляются в Studio Nova Works или на сторонние серверы.",
+          p3: "Исключительно для загрузки запрошенных вами субтитров и вложений браузер отправляет прямые HTTPS-запросы к Udemy и её официальным доменам доставки контента (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` и `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Разрешения расширения Chrome",
+          p1: "Расширение запрашивает только минимально необходимые для работы разрешения:",
+          items: [
+            { code: "sidePanel", desc: "Отображает рабочую область Расширения рядом с плеером курса Udemy." },
+            { code: "storage", desc: "Сохраняет на вашем устройстве локальные пользовательские настройки, описанные в разделе 2." },
+            { code: "tabs", desc: "Проверяет URL активной вкладки, чтобы убедиться, что это страница курса Udemy или Udemy Business (`https://*.udemy.com/course/*`), и обновляет боковую панель. История посещения других сайтов не считывается и не сохраняется." },
+            { code: "scripting", desc: "Применяет скрипт содержимого к уже открытым вкладкам курсов Udemy сразу после установки или обновления, чтобы не требовалась перезагрузка страницы." },
+            { label: "Разрешения хоста", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Необходимы для чтения структуры курса и прямой загрузки подписанных субтитров WebVTT и вложений лекций на ваше устройство." }
+          ]
+        },
+        s5: {
+          title: "5. Сторонние сервисы, аналитика и реклама",
+          items: [
+            "Расширение не использует инструменты аналитики (например, Google Analytics), SDK отслеживания или рекламные сети.",
+            "Расширение не загружает и не выполняет удалённый программный код.",
+            "Мы никогда не продаём, не сдаём в аренду, не передаём и не раскрываем данные пользователей третьим лицам."
+          ]
+        },
+        s6: {
+          title: "6. Хранение и удаление данных",
+          p1: "Все локально сохранённые настройки безвозвратно удаляются при удалении Расширения из Chrome или очистке данных хранилища браузера. Поскольку на внешних серверах данные не хранятся, отдельный запрос на удаление не требуется."
+        },
+        s7: {
+          title: "7. Соответствие правилам Chrome Web Store",
+          p1: "Использование браузерных API и информации Расширением соответствует Правилам программы для разработчиков Chrome Web Store, включая требования ограниченного использования (Limited Use)."
+        },
+        s8: {
+          title: "8. Изменения в настоящей Политике конфиденциальности",
+          p1: "Мы можем периодически обновлять настоящую Политику конфиденциальности с учётом изменений функций Расширения, применимого законодательства или требований Chrome Web Store. Обновления отражаются изменением даты «Последнее обновление» в верхней части страницы."
+        },
+        s9: {
+          title: "9. Информация о разработчике и ссылки",
+          p1: "Для получения общей информации и обновлений о данном Расширении посетите:",
+          devLabel: "Разработчик:",
+          infoLabel: "Информационная страница:",
+          note: "Примечание: данное Расширение является бесплатным независимым личным инструментом и предоставляется «как есть». Выделенная техническая поддержка или ответы на индивидуальные запросы, как правило, не предоставляются."
+        }
+      },
+
+      th: {
+        dir: "ltr",
+        langLabel: "ภาษา",
+        docTitle: "นโยบายความเป็นส่วนตัว — UdeVault",
+        h1: "นโยบายความเป็นส่วนตัว — UdeVault",
+        lastUpdatedLabel: "อัปเดตล่าสุด:",
+        lastUpdatedValue: "18 พฤศจิกายน 2026",
+        developerLabel: "ผู้พัฒนา:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("เรา") เคารพความเป็นส่วนตัวของคุณและมุ่งมั่นที่จะปกป้องข้อมูลของคุณเมื่อใช้งานส่วนขยาย Google Chrome "UdeVault - Full Course Transcript & Resource Archiver for Udemy" ("ส่วนขยาย") นโยบายความเป็นส่วนตัวนี้อธิบายวิธีที่ส่วนขยายจัดการข้อมูล',
+        s1: {
+          title: "1. ไม่มีการเก็บรวบรวมข้อมูลส่วนบุคคล",
+          p1: "ส่วนขยายจะไม่เก็บรวบรวม จัดเก็บ หรือส่งข้อมูลที่ระบุตัวตนได้ (เช่น ชื่อ อีเมล ข้อมูลรับรองบัญชี หรือรายละเอียดการชำระเงิน) ประวัติการเข้าชม หรือความคืบหน้าในการเรียน",
+          p2: "ส่วนขยายไม่จำเป็นต้องลงทะเบียนผู้ใช้หรือเข้าสู่ระบบบัญชี"
+        },
+        s2: {
+          title: "2. การตั้งค่าที่จัดเก็บไว้ในเครื่องของคุณ",
+          p1: "เพื่อจดจำค่ากำหนดของคุณระหว่างเซสชัน ส่วนขยายจะจัดเก็บเฉพาะการตั้งค่าผู้ใช้ต่อไปนี้ไว้ในเบราว์เซอร์ของคุณโดยใช้ `chrome.storage.local` และ `localStorage` ของส่วนขยาย:",
+          items: [
+            "การตั้งค่าภาษาของหน้าจอ (`uiLang` / `lang`)",
+            "การตั้งค่าธีม (โหมดสว่าง / โหมดมืด)",
+            "ภาษาคำบรรยายที่ต้องการ",
+            "ตัวเลือกการส่งออก (ให้ความสำคัญกับเสียงทางการ, รวมบทเรียนที่ว่างเปล่า, รวมลิงก์ทรัพยากร และการรวมไฟล์แนบเป็น ZIP)"
+          ],
+          p2: "การตั้งค่าเหล่านี้จะอยู่บนอุปกรณ์ของคุณเท่านั้น ไม่มีการซิงค์ผ่าน `chrome.storage.sync` หรือส่งไปยังเซิร์ฟเวอร์ของเราหรือบุคคลที่สาม"
+        },
+        s3: {
+          title: "3. การประมวลผลข้อมูลคอร์สและคำขอเครือข่าย",
+          p1: "เมื่อคุณใช้ส่วนขยายบนหน้าคอร์สของ Udemy หรือ Udemy Business ที่คุณลงทะเบียนไว้ ส่วนขยายจะดำเนินการดังนี้:",
+          items: [
+            "อ่านข้อมูลเมตาของบทเรียน ข้อความบทความ แทร็กคำบรรยาย (WebVTT) และข้อมูลเมตาของทรัพยากรเสริม",
+            "จัดรูปแบบเนื้อหาเป็นไฟล์ Markdown (`.md`) หรือบีบอัดเป็นไฟล์ ZIP (`.zip`)"
+          ],
+          p2: "การวิเคราะห์ จัดรูปแบบ และสร้างไฟล์ ZIP ทั้งหมดเกิดขึ้นภายในเบราว์เซอร์ของคุณเท่านั้น และไฟล์ที่ได้จะถูกบันทึกลงในโฟลเดอร์ดาวน์โหลดของคุณโดยตรง ไม่มีการส่งบทถอดความหรือเนื้อหาคอร์สไปยัง Studio Nova Works หรือเซิร์ฟเวอร์ภายนอก",
+          p3: "เพื่อดึงไฟล์คำบรรยายและไฟล์แนบที่คุณร้องขอเท่านั้น เบราว์เซอร์ของคุณจะส่งคำขอ HTTPS โดยตรงไปยัง Udemy และโดเมนจัดส่งเนื้อหาอย่างเป็นทางการ (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` และ `*.cloudfront.net`)"
+        },
+        s4: {
+          title: "4. สิทธิ์ของส่วนขยาย Chrome",
+          p1: "ส่วนขยายขอเฉพาะสิทธิ์ขั้นต่ำที่จำเป็นต่อการทำงาน:",
+          items: [
+            { code: "sidePanel", desc: "แสดงพื้นที่ทำงานของส่วนขยายข้างเครื่องเล่นคอร์ส Udemy" },
+            { code: "storage", desc: "บันทึกการตั้งค่าผู้ใช้ในเครื่องตามที่ระบุในหัวข้อที่ 2" },
+            { code: "tabs", desc: "ตรวจสอบ URL ของแท็บที่ใช้งานอยู่ว่าเป็นหน้าคอร์สของ Udemy หรือ Udemy Business ที่ถูกต้อง (`https://*.udemy.com/course/*`) และอัปเดตแผงด้านข้าง ไม่มีการอ่านหรือจัดเก็บประวัติการเข้าชมเว็บไซต์อื่น" },
+            { code: "scripting", desc: "นำสคริปต์เนื้อหาไปใช้กับแท็บคอร์ส Udemy ที่เปิดอยู่แล้วทันทีหลังการติดตั้งหรืออัปเดต โดยไม่ต้องโหลดหน้าซ้ำ" },
+            { label: "สิทธิ์ของโฮสต์", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "จำเป็นสำหรับการอ่านข้อมูลหลักสูตรและดาวน์โหลดคำบรรยาย WebVTT ที่ลงนามแล้วรวมถึงไฟล์แนบลงในอุปกรณ์ของคุณโดยตรง" }
+          ]
+        },
+        s5: {
+          title: "5. บริการของบุคคลที่สาม การวิเคราะห์ และโฆษณา",
+          items: [
+            "ส่วนขยายไม่ได้ใช้เครื่องมือวิเคราะห์ (เช่น Google Analytics) SDK ติดตาม หรือเครือข่ายโฆษณาใดๆ",
+            "ส่วนขยายไม่โหลดหรือเรียกใช้โค้ดที่โฮสต์จากระยะไกล",
+            "เราไม่เคยขาย ให้เช่า แบ่งปัน หรือเปิดเผยข้อมูลผู้ใช้แก่บุคคลที่สาม"
+          ]
+        },
+        s6: {
+          title: "6. การเก็บรักษาและการลบข้อมูล",
+          p1: "การตั้งค่าทั้งหมดที่จัดเก็บไว้ในเครื่องจะถูกลบอย่างถาวรเมื่อคุณถอนการติดตั้งส่วนขยายออกจาก Chrome หรือล้างข้อมูลพื้นที่จัดเก็บของเบราว์เซอร์ เนื่องจากไม่มีข้อมูลจัดเก็บไว้บนเซิร์ฟเวอร์ภายนอก จึงไม่จำเป็นต้องส่งคำขอลบข้อมูลแยกต่างหาก"
+        },
+        s7: {
+          title: "7. การปฏิบัติตามนโยบายของ Chrome Web Store",
+          p1: "การใช้ API ของเบราว์เซอร์และข้อมูลโดยส่วนขยายเป็นไปตามนโยบายโปรแกรมสำหรับนักพัฒนาซอฟต์แวร์ของ Chrome Web Store รวมถึงข้อกำหนดการใช้งานแบบจำกัด (Limited Use)"
+        },
+        s8: {
+          title: "8. การเปลี่ยนแปลงนโยบายความเป็นส่วนตัวนี้",
+          p1: 'เราอาจอัปเดตนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราวเพื่อให้สอดคล้องกับการเปลี่ยนแปลงฟีเจอร์ กฎหมายที่เกี่ยวข้อง หรือข้อกำหนดของ Chrome Web Store โดยจะแสดงวันที่ "อัปเดตล่าสุด" ใหม่ที่ด้านบนของหน้านี้'
+        },
+        s9: {
+          title: "9. ข้อมูลผู้พัฒนาและลิงก์ที่เกี่ยวข้อง",
+          p1: "สำหรับข้อมูลทั่วไปและการอัปเดตเกี่ยวกับส่วนขยายนี้ โปรดเยี่ยมชม:",
+          devLabel: "ผู้พัฒนา:",
+          infoLabel: "หน้าข้อมูล:",
+          note: "หมายเหตุ: ส่วนขยายนี้เป็นเครื่องมือส่วนบุคคลฟรีที่พัฒนาขึ้นโดยอิสระและให้บริการ 'ตามสภาพ' โดยทั่วไปไม่มีการสนับสนุนทางเทคนิคเฉพาะหรือการตอบคำถามรายบุคคล"
+        }
+      },
+
+      tr: {
+        dir: "ltr",
+        langLabel: "Dil",
+        docTitle: "Gizlilik Politikası — UdeVault",
+        h1: "Gizlilik Politikası — UdeVault",
+        lastUpdatedLabel: "Son Güncelleme:",
+        lastUpdatedValue: "18 Kasım 2026",
+        developerLabel: "Geliştirici:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("biz"), "UdeVault - Full Course Transcript & Resource Archiver for Udemy" ("Uzantı") adlı Google Chrome uzantısını kullanırken gizliliğinize saygı duyar ve verilerinizi korumayı taahhüt eder. Bu Gizlilik Politikası, Uzantının bilgileri nasıl işlediğini açıklar.',
+        s1: {
+          title: "1. Kişisel Veri Toplanmaz",
+          p1: "Uzantı; adınız, e-posta adresiniz, hesap bilgileriniz veya ödeme detaylarınız gibi kişisel olarak tanımlanabilir hiçbir bilgiyi, tarama geçmişinizi veya öğrenme ilerlemenizi toplamaz, saklamaz ve iletmez.",
+          p2: "Uzantı kullanıcı kaydı veya hesap girişi gerektirmez."
+        },
+        s2: {
+          title: "2. Cihazınızda Yerel Olarak Saklanan Ayarlar",
+          p1: "Tercihlerinizi oturumlar arasında hatırlamak için Uzantı, yalnızca aşağıdaki kullanıcı ayarlarını tarayıcınızda `chrome.storage.local` ve uzantının `localStorage` alanı aracılığıyla yerel olarak saklar:",
+          items: [
+            "Arayüz dili tercihi (`uiLang` / `lang`)",
+            "Tema tercihi (Açık / Koyu mod)",
+            "Tercih edilen transkript dili",
+            "Dışa aktarma seçenekleri (resmi ses önceliği, boş derslerin dahil edilmesi, kaynak bağlantılarının eklenmesi ve eklerin ZIP olarak paketlenmesi)"
+          ],
+          p2: "Bu ayarlar yalnızca yerel cihazınızda kalır. Hiçbir zaman `chrome.storage.sync` ile senkronize edilmez veya sunucularımıza ya da üçüncü taraflara gönderilmez."
+        },
+        s3: {
+          title: "3. Kurs Verisi İşleme ve Ağ İstekleri",
+          p1: "Uzantıyı kayıtlı olduğunuz bir Udemy veya Udemy Business kurs sayfasında kullandığınızda şu işlemleri gerçekleştirir:",
+          items: [
+            "Ders meta verilerini, makale metinlerini, altyazı parçalarını (WebVTT) ve ek kaynak meta verilerini okur",
+            "İçeriği bir Markdown dosyasına (`.md`) biçimlendirir veya bir ZIP arşivine (`.zip`) paketler"
+          ],
+          p2: "Tüm ayrıştırma, biçimlendirme ve ZIP paketleme işlemleri tamamen tarayıcınızın içinde yerel olarak gerçekleşir ve oluşturulan dosyalar doğrudan yerel indirilenlerinize kaydedilir. Studio Nova Works'e veya harici bir sunucuya hiçbir transkript ya da kurs içeriği gönderilmez.",
+          p3: "Yalnızca talep ettiğiniz altyazıları ve ek dosyaları almak amacıyla tarayıcınız Udemy'ye ve resmi içerik dağıtım alan adlarına (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` ve `*.cloudfront.net`) doğrudan HTTPS istekleri gönderir."
+        },
+        s4: {
+          title: "4. Chrome Uzantı İzinleri",
+          p1: "Uzantı yalnızca çalışması için gerekli minimum izinleri ister:",
+          items: [
+            { code: "sidePanel", desc: "Uzantının çalışma alanını Udemy kurs oynatıcısının yanında gösterir." },
+            { code: "storage", desc: "Bölüm 2'de açıklanan yerel kullanıcı tercihlerini cihazınıza kaydeder." },
+            { code: "tabs", desc: "Etkin sekmenin URL'sini kontrol ederek geçerli bir Udemy veya Udemy Business kurs sayfası (`https://*.udemy.com/course/*`) olup olmadığını doğrular ve yan paneli günceller. Diğer sitelerin tarama geçmişi asla okunmaz veya saklanmaz." },
+            { code: "scripting", desc: "Sayfayı yenilemeye gerek kalmadan kurulum veya güncelleme sonrasında açık olan Udemy kurs sekmelerine içerik betiğini uygular." },
+            { label: "Ana Bilgisayar İzinleri", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Kurs müfredat verilerini okumak ve imzalı WebVTT altyazı dosyaları ile ders eklerini doğrudan cihazınıza indirmek için gereklidir." }
+          ]
+        },
+        s5: {
+          title: "5. Üçüncü Taraf Hizmetler, Analiz ve Reklam",
+          items: [
+            "Uzantı herhangi bir analiz aracı (Google Analytics gibi), izleme SDK'sı veya reklam ağı kullanmaz.",
+            "Uzantı uzaktan barındırılan kod yüklemez veya çalıştırmaz.",
+            "Kullanıcı verilerini asla üçüncü taraflara satmaz, kiralamaz, paylaşmaz veya açıklamayız."
+          ]
+        },
+        s6: {
+          title: "6. Veri Saklama ve Silme",
+          p1: "Yerel olarak saklanan tüm tercihler, Uzantıyı Chrome'dan kaldırdığınızda veya tarayıcınızın uzantı depolama verilerini temizlediğinizde kalıcı olarak silinir. Harici bir sunucuda veri saklanmadığından ayrı bir silme talebine gerek yoktur."
+        },
+        s7: {
+          title: "7. Chrome Web Store Politikalarına Uyum",
+          p1: "Uzantının tarayıcı API'lerini ve bilgileri kullanımı, Sınırlı Kullanım (Limited Use) gereksinimleri dahil olmak üzere Chrome Web Store Geliştirici Programı Politikalarına uygundur."
+        },
+        s8: {
+          title: "8. Bu Gizlilik Politikasındaki Değişiklikler",
+          p1: 'Bu Gizlilik Politikasını uzantı özelliklerindeki, geçerli yasalardaki veya Chrome Web Store gereksinimlerindeki değişiklikleri yansıtacak şekilde zaman zaman güncelleyebiliriz. Güncellemeler sayfanın üst kısmındaki "Son Güncelleme" tarihi değiştirilerek belirtilir.'
+        },
+        s9: {
+          title: "9. Geliştirici Bilgileri ve İlgili Bağlantılar",
+          p1: "Bu Uzantı hakkında genel bilgiler ve güncellemeler için lütfen ziyaret edin:",
+          devLabel: "Geliştirici:",
+          infoLabel: "Bilgi Sayfası:",
+          note: "Not: Bu Uzantı, bağımsız olarak geliştirilmiş ücretsiz bir kişisel araçtır ve 'olduğu gibi' sunulmaktadır. Özel teknik destek veya bireysel sorulara yanıt genellikle sağlanmamaktadır."
+        }
+      },
+
+      uk: {
+        dir: "ltr",
+        langLabel: "Мова",
+        docTitle: "Політика конфіденційності — UdeVault",
+        h1: "Політика конфіденційності — UdeVault",
+        lastUpdatedLabel: "Останнє оновлення:",
+        lastUpdatedValue: "18 листопада 2026 р.",
+        developerLabel: "Розробник:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works («ми») поважає вашу конфіденційність і зобов’язується захищати ваші дані під час використання розширення Google Chrome «UdeVault - Full Course Transcript & Resource Archiver for Udemy» («Розширення»). Ця Політика конфіденційності пояснює, як Розширення обробляє інформацію.',
+        s1: {
+          title: "1. Жодного збору персональних даних",
+          p1: "Розширення не збирає, не зберігає та не передає жодної персональної інформації (як-от ім’я, адреса електронної пошти, облікові дані чи платіжні реквізити), історії переглядів або прогресу навчання.",
+          p2: "Розширення не потребує реєстрації користувача чи входу в обліковий запис."
+        },
+        s2: {
+          title: "2. Налаштування, що зберігаються локально на вашому пристрої",
+          p1: "Щоб зберігати ваші вподобання між сеансами, Розширення зберігає локально у вашому браузері через `chrome.storage.local` і `localStorage` розширення лише такі налаштування:",
+          items: [
+            "Мова інтерфейсу (`uiLang` / `lang`)",
+            "Тема оформлення (світла / темна)",
+            "Бажана мова субтитрів",
+            "Параметри експорту (пріоритет офіційного аудіо, включення порожніх лекцій, включення посилань на ресурси та пакування вкладень у ZIP)"
+          ],
+          p2: "Ці налаштування залишаються виключно на вашому локальному пристрої. Вони ніколи не синхронізуються через `chrome.storage.sync` і не передаються на наші сервери чи третім особам."
+        },
+        s3: {
+          title: "3. Обробка даних курсу та мережеві запити",
+          p1: "Коли ви використовуєте Розширення на сторінці курсу Udemy або Udemy Business, на який ви записані, воно виконує такі дії:",
+          items: [
+            "Зчитує метадані лекцій, тексти статей, доріжки субтитрів (WebVTT) і метадані додаткових ресурсів",
+            "Форматує вміст у файл Markdown (`.md`) або пакує в архів ZIP (`.zip`)"
+          ],
+          p2: "Увесь аналіз, форматування та створення ZIP відбуваються повністю локально у вашому браузері, а готові файли зберігаються безпосередньо у ваші локальні завантаження. Жодні субтитри чи матеріали курсу не надсилаються до Studio Nova Works або на сторонні сервери.",
+          p3: "Виключно для завантаження запитаних вами субтитрів і вкладень браузер надсилає прямі HTTPS-запити до Udemy та її офіційних доменів доставки контенту (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` та `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Дозволи розширення Chrome",
+          p1: "Розширення запитує лише мінімально необхідні для роботи дозволи:",
+          items: [
+            { code: "sidePanel", desc: "Відображає робочу область Розширення поруч із плеєром курсу Udemy." },
+            { code: "storage", desc: "Зберігає на вашому пристрої локальні налаштування користувача, описані в розділі 2." },
+            { code: "tabs", desc: "Перевіряє URL-адресу активної вкладки, щоб переконатися, що це дійсна сторінка курсу Udemy або Udemy Business (`https://*.udemy.com/course/*`), та оновлює бічну панель. Історія відвідувань інших сайтів ніколи не зчитується та не зберігається." },
+            { code: "scripting", desc: "Застосовує скрипт вмісту до вже відкритих вкладок курсів Udemy одразу після встановлення або оновлення без перезавантаження сторінки." },
+            { label: "Дозволи хоста", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Необхідні для зчитування структури курсу та прямого завантаження підписаних субтитрів WebVTT і вкладень лекцій на ваш пристрій." }
+          ]
+        },
+        s5: {
+          title: "5. Сторонні сервіси, аналітика та реклама",
+          items: [
+            "Розширення не використовує жодних інструментів аналітики (наприклад, Google Analytics), SDK відстеження чи рекламних мереж.",
+            "Розширення не завантажує та не виконує віддалений програмний код.",
+            "Ми ніколи не продаємо, не здаємо в оренду, не передаємо та не розкриваємо дані користувачів третім особам."
+          ]
+        },
+        s6: {
+          title: "6. Зберігання та видалення даних",
+          p1: "Усі локально збережені налаштування остаточно видаляються після видалення Розширення з Chrome або очищення сховища розширень у браузері. Оскільки на зовнішніх серверах дані не зберігаються, окремий запит на видалення не потрібен."
+        },
+        s7: {
+          title: "7. Відповідність правилам Chrome Web Store",
+          p1: "Використання браузерних API та інформації Розширенням відповідає Правилам програми для розробників Chrome Web Store, зокрема вимогам обмеженого використання (Limited Use)."
+        },
+        s8: {
+          title: "8. Зміни до цієї Політики конфіденційності",
+          p1: "Ми можемо час від часу оновлювати цю Політику конфіденційності відповідно до змін функцій Розширення, чинного законодавства або вимог Chrome Web Store. Оновлення позначаються зміною дати «Останнє оновлення» вгорі сторінки."
+        },
+        s9: {
+          title: "9. Інформація про розробника та пов’язані посилання",
+          p1: "Щоб дізнатися загальну інформацію та оновлення про це Розширення, відвідайте:",
+          devLabel: "Розробник:",
+          infoLabel: "Інформаційна сторінка:",
+          note: "Примітка: це Розширення є безкоштовним незалежним особистим інструментом і надається «як є». Виділена технічна підтримка або відповіді на індивідуальні запити зазвичай не надаються."
+        }
+      },
+
+      vi: {
+        dir: "ltr",
+        langLabel: "Ngôn ngữ",
+        docTitle: "Chính sách Quyền riêng tư — UdeVault",
+        h1: "Chính sách Quyền riêng tư — UdeVault",
+        lastUpdatedLabel: "Cập nhật lần cuối:",
+        lastUpdatedValue: "18 tháng 11, 2026",
+        developerLabel: "Nhà phát triển:",
+        developerValue: "Studio Nova Works",
+        intro: 'Studio Nova Works ("chúng tôi") tôn trọng quyền riêng tư của bạn và cam kết bảo vệ dữ liệu của bạn khi sử dụng tiện ích mở rộng Google Chrome "UdeVault - Full Course Transcript & Resource Archiver for Udemy" ("Tiện ích"). Chính sách Quyền riêng tư này giải thích cách Tiện ích xử lý thông tin.',
+        s1: {
+          title: "1. Không thu thập dữ liệu cá nhân",
+          p1: "Tiện ích không thu thập, lưu trữ hoặc truyền bất kỳ thông tin nhận dạng cá nhân nào (như tên, địa chỉ email, thông tin đăng nhập tài khoản hoặc chi tiết thanh toán), lịch sử duyệt web hay tiến độ học tập.",
+          p2: "Tiện ích không yêu cầu đăng ký người dùng hoặc đăng nhập tài khoản."
+        },
+        s2: {
+          title: "2. Cài đặt được lưu cục bộ trên thiết bị của bạn",
+          p1: "Để ghi nhớ tùy chọn của bạn giữa các phiên, Tiện ích chỉ lưu trữ cục bộ các cài đặt sau trong trình duyệt bằng `chrome.storage.local` và `localStorage` của tiện ích:",
+          items: [
+            "Tùy chọn ngôn ngữ hiển thị giao diện (`uiLang` / `lang`)",
+            "Tùy chọn giao diện (chế độ Sáng / Tối)",
+            "Ngôn ngữ bản ghi phụ đề ưu tiên",
+            "Các tùy chọn xuất file (ưu tiên âm thanh chính thức, bao gồm bài giảng trống, bao gồm liên kết tài nguyên và đóng gói ZIP tệp đính kèm)"
+          ],
+          p2: "Các cài đặt này chỉ nằm trên thiết bị cục bộ của bạn. Chúng không bao giờ được đồng bộ qua `chrome.storage.sync` hay gửi đến máy chủ của chúng tôi hoặc bất kỳ bên thứ ba nào."
+        },
+        s3: {
+          title: "3. Xử lý dữ liệu khóa học và yêu cầu mạng",
+          p1: "Khi bạn sử dụng Tiện ích trên trang khóa học Udemy hoặc Udemy Business mà bạn đã đăng ký, Tiện ích thực hiện các tác vụ sau:",
+          items: [
+            "Đọc siêu dữ liệu bài giảng, văn bản bài viết, phụ đề (WebVTT) và siêu dữ liệu tài nguyên bổ sung",
+            "Định dạng nội dung thành tệp Markdown (`.md`) hoặc đóng gói thành tệp nén ZIP (`.zip`)"
+          ],
+          p2: "Mọi quá trình phân tích, định dạng và đóng gói ZIP đều diễn ra hoàn toàn cục bộ bên trong trình duyệt của bạn, và tệp kết quả được lưu trực tiếp vào thư mục tải xuống trên máy. Không có bản ghi hay nội dung khóa học nào được gửi tới Studio Nova Works hoặc máy chủ bên ngoài.",
+          p3: "Chỉ nhằm mục đích tải xuống phụ đề và tài nguyên đính kèm do bạn yêu cầu, trình duyệt của bạn gửi yêu cầu HTTPS trực tiếp tới Udemy và các tên miền phân phối nội dung chính thức của họ (`*.udemy.com`, `*.udemycdn.com`, `*.amazonaws.com` và `*.cloudfront.net`)."
+        },
+        s4: {
+          title: "4. Quyền của tiện ích Chrome",
+          p1: "Tiện ích chỉ yêu cầu các quyền tối thiểu cần thiết để hoạt động:",
+          items: [
+            { code: "sidePanel", desc: "Hiển thị không gian làm việc của Tiện ích bên cạnh trình phát khóa học Udemy." },
+            { code: "storage", desc: "Lưu trữ trên thiết bị các tùy chọn người dùng cục bộ được mô tả ở Mục 2." },
+            { code: "tabs", desc: "Kiểm tra URL của tab đang hoạt động để xác minh đó là trang khóa học Udemy hoặc Udemy Business hợp lệ (`https://*.udemy.com/course/*`) và cập nhật bảng điều khiển bên. Lịch sử duyệt web trên các trang khác không bao giờ bị đọc hoặc lưu." },
+            { code: "scripting", desc: "Áp dụng tập lệnh nội dung cho các tab khóa học Udemy đang mở ngay sau khi cài đặt hoặc cập nhật để bạn có thể sử dụng mà không cần tải lại trang." },
+            { label: "Quyền máy chủ", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "Cần thiết để đọc dữ liệu chương trình học và tải xuống trực tiếp các tệp phụ đề WebVTT đã ký cùng tệp đính kèm bài giảng về thiết bị của bạn." }
+          ]
+        },
+        s5: {
+          title: "5. Dịch vụ bên thứ ba, phân tích và quảng cáo",
+          items: [
+            "Tiện ích không sử dụng bất kỳ công cụ phân tích nào (như Google Analytics), SDK theo dõi hay mạng quảng cáo.",
+            "Tiện ích không tải hoặc thực thi mã được lưu trữ từ xa.",
+            "Chúng tôi không bao giờ bán, cho thuê, chia sẻ hoặc tiết lộ dữ liệu người dùng cho bên thứ ba."
+          ]
+        },
+        s6: {
+          title: "6. Lưu giữ và xóa dữ liệu",
+          p1: "Mọi tùy chọn được lưu cục bộ sẽ bị xóa vĩnh viễn khi bạn gỡ cài đặt Tiện ích khỏi Chrome hoặc xóa dữ liệu lưu trữ của tiện ích trong trình duyệt. Vì không có dữ liệu nào được lưu trên máy chủ bên ngoài nên không cần yêu cầu xóa dữ liệu riêng."
+        },
+        s7: {
+          title: "7. Tuân thủ chính sách của Chrome Web Store",
+          p1: "Việc Tiện ích sử dụng các API trình duyệt và thông tin tuân thủ Chính sách Chương trình Nhà phát triển của Chrome Web Store, bao gồm các yêu cầu Sử dụng Hạn chế (Limited Use)."
+        },
+        s8: {
+          title: "8. Thay đổi đối với Chính sách Quyền riêng tư này",
+          p1: 'Chúng tôi có thể cập nhật Chính sách Quyền riêng tư này theo thời gian để phản ánh những thay đổi về tính năng, luật hiện hành hoặc yêu cầu của Chrome Web Store. Mọi cập nhật sẽ được thể hiện bằng cách thay đổi ngày "Cập nhật lần cuối" ở đầu trang.'
+        },
+        s9: {
+          title: "9. Thông tin nhà phát triển & Liên kết liên quan",
+          p1: "Để xem thông tin chung và cập nhật về Tiện ích này, vui lòng truy cập:",
+          devLabel: "Nhà phát triển:",
+          infoLabel: "Trang thông tin:",
+          note: 'Lưu ý: Tiện ích này là công cụ cá nhân miễn phí được phát triển độc lập và cung cấp "nguyên trạng". Hỗ trợ kỹ thuật chuyên biệt hoặc phản hồi các yêu cầu cá nhân nhìn chung không được cung cấp.'
+        }
+      },
+
+      zh_CN: {
+        dir: "ltr",
+        langLabel: "语言",
+        docTitle: "隐私政策 — UdeVault",
+        h1: "隐私政策 — UdeVault",
+        lastUpdatedLabel: "最后更新：",
+        lastUpdatedValue: "2026年11月18日",
+        developerLabel: "开发者：",
+        developerValue: "Studio Nova Works",
+        intro: "Studio Nova Works（以下简称“我们”）尊重您的隐私，并致力于在您使用 Google Chrome 扩展程序“UdeVault - Full Course Transcript & Resource Archiver for Udemy”（以下简称“本扩展”）时保护您的数据。本隐私政策说明本扩展如何处理相关信息。",
+        s1: {
+          title: "1. 不收集个人数据",
+          p1: "本扩展不会收集、存储或传输任何可识别个人身份的信息（如姓名、电子邮箱、账号凭据或付款信息）、浏览历史记录或学习进度。",
+          p2: "本扩展不需要用户注册或账号登录。"
+        },
+        s2: {
+          title: "2. 仅在您的设备本地存储的设置",
+          p1: "为了在会话之间记住您的偏好，本扩展仅使用 `chrome.storage.local` 和扩展的 `localStorage` 在您的浏览器本地保存以下用户设置：",
+          items: [
+            "界面显示语言偏好（`uiLang` / `lang`）",
+            "主题偏好（浅色 / 深色模式）",
+            "首选字幕文本语言",
+            "导出选项开关（优先官方音频、是否包含空课时、是否包含资源链接以及是否将附件打包为 ZIP）"
+          ],
+          p2: "这些设置仅保留在您的本地设备上，绝不会通过 `chrome.storage.sync` 进行同步，也不会传输至我们的服务器或任何第三方。"
+        },
+        s3: {
+          title: "3. 课程数据处理与网络请求",
+          p1: "当您在已报名的 Udemy 或 Udemy Business 课程页面上使用本扩展时，它会执行以下操作：",
+          items: [
+            "读取课时元数据、文章正文、字幕轨道（WebVTT）以及附加资源元数据",
+            "将内容格式化为 Markdown 文件（`.md`）或打包为 ZIP 压缩包（`.zip`）"
+          ],
+          p2: "所有的解析、格式化和 ZIP 打包均完全在您的浏览器本地（设备端）完成，生成的文件会直接保存到您的本地下载目录。任何字幕文本或课程内容都不会被发送至 Studio Nova Works 或任何外部服务器。",
+          p3: "仅出于获取您所请求的字幕文件和课程附件之目的，您的浏览器会直接向 Udemy 及其官方内容分发域名（`*.udemy.com`、`*.udemycdn.com`、`*.amazonaws.com` 和 `*.cloudfront.net`）发送 HTTPS 请求。"
+        },
+        s4: {
+          title: "4. Chrome 扩展权限说明",
+          p1: "本扩展仅请求运行所需的最低限度权限：",
+          items: [
+            { code: "sidePanel", desc: "在 Udemy 课程播放器旁显示本扩展的工作区。" },
+            { code: "storage", desc: "将第 2 节所述的本地用户偏好保存在您的设备上。" },
+            { code: "tabs", desc: "检查当前活动标签页的 URL，以验证其是否为有效的 Udemy 或 Udemy Business 课程页面（`https://*.udemy.com/course/*`）并相应更新侧边栏状态。绝不会读取或存储其他网站的浏览历史。" },
+            { code: "scripting", desc: "在安装或更新后立即向已打开的 Udemy 课程标签页应用内容脚本，让您无需刷新页面即可使用。" },
+            { label: "主机权限", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "用于读取课程大纲数据，并将经过签名的 WebVTT 字幕文件和课时附件直接下载到您的设备。" }
+          ]
+        },
+        s5: {
+          title: "5. 第三方服务、分析与广告",
+          items: [
+            "本扩展不使用任何分析工具（如 Google Analytics）、跟踪 SDK 或广告网络。",
+            "本扩展不加载或执行远程托管的代码。",
+            "我们绝不会向第三方出售、出租、共享或披露用户数据。"
+          ]
+        },
+        s6: {
+          title: "6. 数据保留与删除",
+          p1: "当您从 Chrome 中卸载本扩展或清除浏览器的扩展存储数据时，所有本地保存的偏好设置都将被永久删除。由于外部服务器上不存储任何数据，因此无需另行提交数据删除请求。"
+        },
+        s7: {
+          title: "7. 遵守 Chrome 应用商店政策",
+          p1: "本扩展对浏览器 API 和信息的使用遵守 Chrome Web Store 开发者计划政策，包括“有限使用（Limited Use）”要求。"
+        },
+        s8: {
+          title: "8. 本隐私政策的变更",
+          p1: "我们可能会不时更新本隐私政策，以反映扩展功能、适用法律或 Chrome Web Store 要求的变化。任何更新都将通过修改页面顶部的“最后更新”日期予以标明。"
+        },
+        s9: {
+          title: "9. 开发者信息及相关链接",
+          p1: "如需了解本扩展的一般信息及更新动态，请访问：",
+          devLabel: "开发者：",
+          infoLabel: "信息发布页面：",
+          note: "注：本扩展为独立开发的免费个人工具，按“现状”提供，原则上不提供专门的技术支持或个人咨询回复。"
+        }
+      },
+
+      zh_TW: {
+        dir: "ltr",
+        langLabel: "語言",
+        docTitle: "隱私權政策 — UdeVault",
+        h1: "隱私權政策 — UdeVault",
+        lastUpdatedLabel: "最後更新日期：",
+        lastUpdatedValue: "2026年11月18日",
+        developerLabel: "開發者：",
+        developerValue: "Studio Nova Works",
+        intro: "Studio Nova Works（以下簡稱「我們」）重視您的隱私，並致力於在您使用 Google Chrome 擴充功能「UdeVault - Full Course Transcript & Resource Archiver for Udemy」（以下簡稱「本擴充功能」）時保護您的資料。本隱私權政策說明本擴充功能如何處理相關資訊。",
+        s1: {
+          title: "1. 不收集個人資料",
+          p1: "本擴充功能不會收集、儲存或傳輸任何可識別個人身分的資訊（例如姓名、電子郵件地址、帳號憑證或付款資訊）、瀏覽紀錄或學習進度。",
+          p2: "本擴充功能無需註冊使用者或登入帳號。"
+        },
+        s2: {
+          title: "2. 僅儲存在您裝置本機的設定",
+          p1: "為了在工作階段之間記住您的偏好，本擴充功能僅使用 `chrome.storage.local` 與擴充功能的 `localStorage` 在您的瀏覽器本機儲存以下使用者設定：",
+          items: [
+            "介面顯示語言偏好（`uiLang` / `lang`）",
+            "佈景主題偏好（淺色 / 深色模式）",
+            "偏好的逐字稿語言",
+            "匯出選項開關（優先官方音訊、是否包含空白單元、是否包含資源連結以及是否將附件打包為 ZIP）"
+          ],
+          p2: "這些設定僅保留在您的本機裝置上，絕不會透過 `chrome.storage.sync` 同步，也不會傳送至我們的伺服器或任何第三方。"
+        },
+        s3: {
+          title: "3. 課程資料處理與網路請求",
+          p1: "當您在已註冊的 Udemy 或 Udemy Business 課程頁面上使用本擴充功能時，它會執行以下操作：",
+          items: [
+            "讀取課程單元中繼資料、文章內文、字幕軌（WebVTT）以及補充資源中繼資料",
+            "將內容格式化為 Markdown 檔案（`.md`）或打包為 ZIP 壓縮檔（`.zip`）"
+          ],
+          p2: "所有的解析、格式化與 ZIP 打包均完全在您的瀏覽器本機端（裝置端）完成，產生的檔案會直接儲存至您的本機下載資料夾。任何逐字稿或課程內容都不會傳送至 Studio Nova Works 或任何外部伺服器。",
+          p3: "僅為取得您所請求的字幕檔案與課程附件，您的瀏覽器會直接向 Udemy 及其官方內容傳遞網域（`*.udemy.com`、`*.udemycdn.com`、`*.amazonaws.com` 與 `*.cloudfront.net`）傳送 HTTPS 請求。"
+        },
+        s4: {
+          title: "4. Chrome 擴充功能權限說明",
+          p1: "本擴充功能僅要求運作所需的最低限度權限：",
+          items: [
+            { code: "sidePanel", desc: "在 Udemy 課程播放器旁顯示本擴充功能的工作區。" },
+            { code: "storage", desc: "將第 2 節所述的本機使用者偏好儲存在您的裝置上。" },
+            { code: "tabs", desc: "檢查目前使用中分頁的 URL，以確認是否為有效的 Udemy 或 Udemy Business 課程頁面（`https://*.udemy.com/course/*`）並據此更新側邊欄狀態。絕不會讀取或儲存其他網站的瀏覽紀錄。" },
+            { code: "scripting", desc: "在安裝或更新後立即將內容指令碼套用至已開啟的 Udemy 課程分頁，讓您無需重新載入頁面即可使用。" },
+            { label: "主機權限", codes: ["*.udemy.com", "*.udemycdn.com", "*.amazonaws.com", "*.cloudfront.net"], desc: "用於讀取課程大綱資料，並將已簽署的 WebVTT 字幕檔案與單元附件直接下載到您的裝置。" }
+          ]
+        },
+        s5: {
+          title: "5. 第三方服務、分析與廣告",
+          items: [
+            "本擴充功能不使用任何分析工具（如 Google Analytics）、追蹤 SDK 或廣告聯播網。",
+            "本擴充功能不載入或執行遠端託管的程式碼。",
+            "我們絕不會向第三方出售、出租、分享或揭露使用者資料。"
+          ]
+        },
+        s6: {
+          title: "6. 資料保留與刪除",
+          p1: "當您從 Chrome 移除本擴充功能或清除瀏覽器的擴充功能儲存資料時，所有本機儲存的偏好設定都會永久刪除。由於外部伺服器上未儲存任何資料，因此無需另行提出資料刪除請求。"
+        },
+        s7: {
+          title: "7. 遵守 Chrome 線上應用程式商店政策",
+          p1: "本擴充功能對瀏覽器 API 與資訊的使用遵守 Chrome Web Store 開發人員計畫政策，包括「有限使用（Limited Use）」要求。"
+        },
+        s8: {
+          title: "8. 本隱私權政策的變更",
+          p1: "我們可能會不時更新本隱私權政策，以反映功能、適用法律或 Chrome Web Store 要求的變更。任何更新都會透過修改頁面頂部的「最後更新日期」予以標示。"
+        },
+        s9: {
+          title: "9. 開發者資訊與相關連結",
+          p1: "如需了解本擴充功能的一般資訊與更新動態，請造訪：",
+          devLabel: "開發者：",
+          infoLabel: "資訊發佈頁面：",
+          note: "註：本擴充功能為獨立開發的免費個人工具，依「現況」提供，原則上不提供專屬技術支援或個別諮詢回覆。"
+        }
+      }
+    };
+
+    const htmlEl = document.documentElement;
+    const langSelect = document.getElementById("langSelect");
+    const langLabel = document.getElementById("langLabel");
+    const mainEl = document.getElementById("policyContent");
+
+    function appendFormattedText(parent, text) {
+      const parts = text.split(/(`[^`]+`)/g);
+      for (const part of parts) {
+        if (part.startsWith("`") && part.endsWith("`") && part.length >= 2) {
+          const code = document.createElement("code");
+          code.textContent = part.slice(1, -1);
+          parent.appendChild(code);
+        } else if (part) {
+          parent.appendChild(document.createTextNode(part));
+        }
+      }
+    }
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (typeof text === "string") appendFormattedText(node, text);
+      return node;
+    }
+
+    function renderPolicy(lang) {
+      const data = POLICIES[lang] || POLICIES.en;
+      const resolvedLang = POLICIES[lang] ? lang : "en";
+
+      htmlEl.lang = resolvedLang.replace("_", "-");
+      htmlEl.dir = data.dir || "ltr";
+      document.title = data.docTitle;
+      langLabel.textContent = data.langLabel;
+      langSelect.value = resolvedLang;
+
+      const frag = document.createDocumentFragment();
+
+      frag.appendChild(el("h1", null, data.h1));
+
+      const meta = el("div", "meta");
+      const metaDate = el("div");
+      const dateStrong = el("strong", null, data.lastUpdatedLabel + " ");
+      metaDate.appendChild(dateStrong);
+      metaDate.appendChild(document.createTextNode(data.lastUpdatedValue));
+      meta.appendChild(metaDate);
+
+      const metaDev = el("div");
+      const devStrong = el("strong", null, data.developerLabel + " ");
+      metaDev.appendChild(devStrong);
+      metaDev.appendChild(document.createTextNode(data.developerValue));
+      meta.appendChild(metaDev);
+      frag.appendChild(meta);
+
+      frag.appendChild(el("p", "intro", data.intro));
+
+      // Section 1
+      const s1 = el("section");
+      s1.appendChild(el("h2", null, data.s1.title));
+      s1.appendChild(el("p", null, data.s1.p1));
+      s1.appendChild(el("p", null, data.s1.p2));
+      frag.appendChild(s1);
+
+      // Section 2
+      const s2 = el("section");
+      s2.appendChild(el("h2", null, data.s2.title));
+      s2.appendChild(el("p", null, data.s2.p1));
+      const ul2 = el("ul");
+      for (const item of data.s2.items) {
+        ul2.appendChild(el("li", null, item));
+      }
+      s2.appendChild(ul2);
+      s2.appendChild(el("p", null, data.s2.p2));
+      frag.appendChild(s2);
+
+      // Section 3
+      const s3 = el("section");
+      s3.appendChild(el("h2", null, data.s3.title));
+      s3.appendChild(el("p", null, data.s3.p1));
+      const ul3 = el("ul");
+      for (const item of data.s3.items) {
+        ul3.appendChild(el("li", null, item));
+      }
+      s3.appendChild(ul3);
+      s3.appendChild(el("p", null, data.s3.p2));
+      s3.appendChild(el("p", null, data.s3.p3));
+      frag.appendChild(s3);
+
+      // Section 4
+      const s4 = el("section");
+      s4.appendChild(el("h2", null, data.s4.title));
+      s4.appendChild(el("p", null, data.s4.p1));
+      const ul4 = el("ul");
+      for (const item of data.s4.items) {
+        const li = el("li");
+        if (item.code) {
+          li.appendChild(el("code", null, item.code));
+          li.appendChild(document.createTextNode(": "));
+        } else if (item.label) {
+          li.appendChild(el("strong", null, item.label));
+          li.appendChild(document.createTextNode(" ("));
+          item.codes.forEach((c, idx) => {
+            if (idx > 0) li.appendChild(document.createTextNode(", "));
+            li.appendChild(el("code", null, c));
+          });
+          li.appendChild(document.createTextNode("): "));
+        }
+        appendFormattedText(li, item.desc);
+        ul4.appendChild(li);
+      }
+      s4.appendChild(ul4);
+      frag.appendChild(s4);
+
+      // Section 5
+      const s5 = el("section");
+      s5.appendChild(el("h2", null, data.s5.title));
+      const ul5 = el("ul");
+      for (const item of data.s5.items) {
+        ul5.appendChild(el("li", null, item));
+      }
+      s5.appendChild(ul5);
+      frag.appendChild(s5);
+
+      // Section 6
+      const s6 = el("section");
+      s6.appendChild(el("h2", null, data.s6.title));
+      s6.appendChild(el("p", null, data.s6.p1));
+      frag.appendChild(s6);
+
+      // Section 7
+      const s7 = el("section");
+      s7.appendChild(el("h2", null, data.s7.title));
+      s7.appendChild(el("p", null, data.s7.p1));
+      frag.appendChild(s7);
+
+      // Section 8
+      const s8 = el("section");
+      s8.appendChild(el("h2", null, data.s8.title));
+      s8.appendChild(el("p", null, data.s8.p1));
+      frag.appendChild(s8);
+
+      // Section 9
+      const s9 = el("section");
+      s9.appendChild(el("h2", null, data.s9.title));
+      s9.appendChild(el("p", null, data.s9.p1));
+      const ul9 = el("ul");
+
+      const liDev = el("li");
+      liDev.appendChild(el("strong", null, data.s9.devLabel + " "));
+      liDev.appendChild(document.createTextNode(data.developerValue));
+      ul9.appendChild(liDev);
+
+      const liInfo = el("li");
+      liInfo.appendChild(el("strong", null, data.s9.infoLabel + " "));
+      const link = document.createElement("a");
+      link.href = INFO_URL;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = INFO_URL;
+      liInfo.appendChild(link);
+      ul9.appendChild(liInfo);
+
+      s9.appendChild(ul9);
+      s9.appendChild(el("p", "note", data.s9.note));
+      frag.appendChild(s9);
+
+      mainEl.replaceChildren(frag);
+    }
+
+    function detectInitialLang() {
+      const params = new URLSearchParams(window.location.search);
+      const qLang = params.get("lang");
+      if (qLang && POLICIES[qLang]) return qLang;
+
+      const navLang = (navigator.language || "en").replace("-", "_");
+      if (POLICIES[navLang]) return navLang;
+      const lower = navLang.toLowerCase();
+      if (lower.startsWith("zh_tw") || lower.startsWith("zh_hk") || lower.startsWith("zh_mo") || lower === "zh_hant") {
+        return "zh_TW";
+      }
+      if (lower.startsWith("zh")) return "zh_CN";
+      const base = lower.split("_")[0];
+      if (POLICIES[base]) return base;
+      return "en";
+    }
+
+    langSelect.addEventListener("change", (e) => {
+      const next = e.target.value;
+      renderPolicy(next);
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", next);
+      window.history.replaceState({}, "", url);
+    });
+
+    const initialLang = detectInitialLang();
+    if (initialLang !== "en") {
+      renderPolicy(initialLang);
+    }
+  </script>
+</body>
+</html>
